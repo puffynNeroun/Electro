@@ -23,10 +23,10 @@ export default class NewProduct extends Component {
         };
 
         return (
-            <div>
+            <div style={{marginTop: '40px'}}>
                 <Container>
-                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                        <h2> NEW PRODUCTS</h2>
+                    <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '20px'}}>
+                        <h2 style={{fontSize: '25px'}}> NEW PRODUCTS</h2>
                         <div className="section-nav">
                             <ul className="section-tab-nav tab-nav">
                                 <li className="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
@@ -78,8 +78,8 @@ export default class NewProduct extends Component {
                                             className="tooltipp">quick view</span></button>
                                     </div>
                                 </div>
-                                <div className="add-to-cart">
-                                    <button className="add-to-cart-btn"><FontAwesomeIcon icon={faShoppingCart}
+                                <div className="add-to-cart" style={{paddingTop: '38px'}}>
+                                    <button className="add-to-cart-btn" style={{fontSize: "inherit"}}><FontAwesomeIcon icon={faShoppingCart}
                                                                                          className="fa fa-shopping-cart"/> add
                                         to cart
                                     </button>

@@ -1,0 +1,42 @@
+#top-header {
+  display: flex;
+}
+
+.fa-phone {
+  color: #D10024;
+  margin-right: 5px;
+}
+
+.fa-envelope-open-o {
+  color: #D10024;
+  margin-right: 5px;
+}
+
+.fa-dollar {
+  color: #D10024;
+  margin-right: 5px;
+}
+
+.fa-user-o {
+  color: #D10024;
+  margin-right: 5px;
+}
+
+.header-search form .input-select {
+  margin-right: 0;
+}
+
+.header-search form .search-btn {
+  height: 0;
+  background: #D10024;
+  color: #FFF;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 40px 40px 0;
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  right: -11px;
+  padding: 9px 35px 9px 35px;
+}
+

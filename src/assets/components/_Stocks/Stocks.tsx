@@ -1,3 +1,4 @@
+import './stocks.scss'
 
 const Stocks = () => {
     return (

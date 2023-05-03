@@ -1,6 +1,8 @@
 import shop01 from './../../img/shop01.png'
 import shop02 from './../../img/shop02.png'
 import shop03 from './../../img/shop03.png'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons";
 
 
 const Collection = () => {
@@ -18,8 +20,11 @@ const Collection = () => {
                             </div>
                             <div className="shop-body">
                                 <h3>Laptop<br/>Collection</h3>
-                                <a href="#" className="cta-btn">Shop now <i
-                                    className="fa fa-arrow-circle-right"></i></a>
+                                <a href="#" className="cta-btn">
+                                    Shop now
+                                    <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right"
+                                                     style={{paddingLeft: '10px'}}></FontAwesomeIcon>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -29,12 +34,14 @@ const Collection = () => {
                     <div className="col-md-4 col-xs-6">
                         <div className="shop">
                             <div className="shop-img">
-                                <img src={shop03} alt="shop03" />
+                                <img src={shop03} alt="shop03"/>
                             </div>
                             <div className="shop-body">
-                                <h3>Accessories<br />Collection</h3>
-                                <a href="#" className="cta-btn">Shop now <i
-                                    className="fa fa-arrow-circle-right"></i></a>
+                                <h3>Accessories<br/>Collection</h3>
+                                <a href="#" className="cta-btn">Shop now
+                                    <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right"
+                                                     style={{paddingLeft: '10px'}}></FontAwesomeIcon>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -47,9 +54,11 @@ const Collection = () => {
                                 <img src={shop02} alt="shop02"/>
                             </div>
                             <div className="shop-body">
-                                <h3>Cameras<br />Collection</h3>
-                                <a href="#" className="cta-btn">Shop now <i
-                                    className="fa fa-arrow-circle-right"></i></a>
+                                <h3>Cameras<br/>Collection</h3>
+                                <a href="#" className="cta-btn">Shop now
+                                    <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right"
+                                                     style={{paddingLeft: '10px'}}></FontAwesomeIcon>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -58,7 +67,7 @@ const Collection = () => {
                 {/* /row */}
             </div>
         </div>
-);
+    );
 };
 
 export default Collection;

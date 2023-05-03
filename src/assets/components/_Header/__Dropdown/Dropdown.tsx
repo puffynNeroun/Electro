@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import product01 from "../../../img/product01.png";
 import product02 from "../../../img/product02.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -13,8 +13,16 @@ function Dropdown() {
         <div>
             <div className="dropdown" onClick={handleToggle}>
                 <a className="dropdown-toggle" aria-expanded="true">
-                    <FontAwesomeIcon className="fa fa-shopping-cart" icon={faShoppingCart} />
-                    <span>Your Cart</span>
+                    <FontAwesomeIcon className="fa fa-shopping-cart" icon={faShoppingCart}/>
+                    <span style=
+                              {
+                                  {
+                                      fontSize: '12px',
+                                      paddingTop: '5px'
+                                  }
+                              }
+                    >Your Cart
+                    </span>
                 </a>
 
             </div>
@@ -23,7 +31,7 @@ function Dropdown() {
                     <div className="cart-list">
                         <div className="product-widget">
                             <div className="product-img">
-                                <img src={product01} alt="" />
+                                <img src={product01} alt=""/>
                             </div>
                             <div className="product-body">
                                 <h3 className="product-name"><a href="#">product name goes
@@ -36,7 +44,7 @@ function Dropdown() {
 
                         <div className="product-widget">
                             <div className="product-img">
-                                <img src={product02} alt="" />
+                                <img src={product02} alt=""/>
                             </div>
                             <div className="product-body">
                                 <h3 className="product-name"><a href="#">product name goes

@@ -1,3 +1,8 @@
+
+.product {
+  margin: 20px 0 75px 0 !important;
+}
+
 .product-btns {
   display: flex;
   align-items: center;
@@ -5,6 +10,23 @@
   height: 43px;
 }
 
+//.slick-list {
+//  padding-left: 0;
+//}
+//
+//.slick-track {
+//  width: 6376px;
+//  transform: translate3d(-1296px, 0px, 0px);
+//}
+//
+//.slick-slide {
+//  width: 328px !important;
+//}
+
 .fa-star {
   width: 14px;
+}
+
+.slick-dots {
+  display: none !important;
 }
