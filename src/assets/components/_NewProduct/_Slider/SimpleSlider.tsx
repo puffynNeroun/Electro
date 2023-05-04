@@ -20,6 +20,7 @@ export default class NewProduct extends Component {
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
+            autoplay: true,
         };
 
         return (
@@ -40,7 +41,7 @@ export default class NewProduct extends Component {
 
 
                         {sliderItems.map((sliderItem) =>
-                            <div className="product slick-slide slick-current slick-active">
+                            <div key={sliderItem.key} className="product slick-slide slick-current slick-active">
 
                                 <div className="product-img">
                                     <img src={sliderItem.img} alt=""/>

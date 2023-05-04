@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import {Col, Row} from "react-bootstrap";
 import "./slider.css";
 import './TopSellingTwo.scss'
-import {topSellingTwoSlidesItems, topSellingTwoSlidesItems2, topSellingTwoSlidesItems3} from "../_TopSelling/_Slider/simpleSlider.data";
+import {topSellingTwo2SlidesItems, topSellingTwo2SlidesItems2, topSellingTwo2SlidesItems3} from "../_TopSelling/_Slider/simpleSlider.data";
 
 const Test = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -29,46 +29,46 @@ const Test = () => {
                         </div>
                     </div>
                     <div className={`slide ${activeSlide === 0 ? "active" : ""} `}>
-                        {topSellingTwoSlidesItems.map((topSellingTwoSlidesItem) =>
-                            <div key={topSellingTwoSlidesItem.key} className="product-widget">
+                        {topSellingTwo2SlidesItems.map((topSellingTwo2SlidesItem) =>
+                            <div key={topSellingTwo2SlidesItem.key} className="product-widget">
                                 <div className="product-img">
-                                    <img src={topSellingTwoSlidesItem.img} alt=""/>
+                                    <img src={topSellingTwo2SlidesItem.img} alt=""/>
                                 </div>
                                 <div className="product-body">
-                                    <p className="product-category">{topSellingTwoSlidesItem.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingTwoSlidesItem.names}</a></h3>
-                                    <h4 className="product-price">{topSellingTwoSlidesItem.price} <del
-                                        className="product-old-price">{topSellingTwoSlidesItem.oldprice}</del></h4>
+                                    <p className="product-category">{topSellingTwo2SlidesItem.category}</p>
+                                    <h3 className="product-name"><a href="#">{topSellingTwo2SlidesItem.names}</a></h3>
+                                    <h4 className="product-price">{topSellingTwo2SlidesItem.price} <del
+                                        className="product-old-price">{topSellingTwo2SlidesItem.oldprice}</del></h4>
                                 </div>
                             </div>
                         )}
                     </div>
                     <div className={`slide ${activeSlide === 1 ? "active" : ""} `}>
-                        {topSellingTwoSlidesItems2.map((topSellingTwoSlidesItem2) =>
-                            <div key={topSellingTwoSlidesItem2.key} className="product-widget">
+                        {topSellingTwo2SlidesItems2.map((topSellingTwo2SlidesItem2) =>
+                            <div key={topSellingTwo2SlidesItem2.key} className="product-widget">
                                 <div className="product-img">
-                                    <img src={topSellingTwoSlidesItem2.img} alt=""/>
+                                    <img src={topSellingTwo2SlidesItem2.img} alt=""/>
                                 </div>
                                 <div className="product-body">
-                                    <p className="product-category">{topSellingTwoSlidesItem2.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingTwoSlidesItem2.names}</a></h3>
-                                    <h4 className="product-price">{topSellingTwoSlidesItem2.price} <del
-                                        className="product-old-price">{topSellingTwoSlidesItem2.oldprice}</del></h4>
+                                    <p className="product-category">{topSellingTwo2SlidesItem2.category}</p>
+                                    <h3 className="product-name"><a href="#">{topSellingTwo2SlidesItem2.names}</a></h3>
+                                    <h4 className="product-price">{topSellingTwo2SlidesItem2.price} <del
+                                        className="product-old-price">{topSellingTwo2SlidesItem2.oldprice}</del></h4>
                                 </div>
                             </div>
                         )}
                     </div>
                     <div className={`slide ${activeSlide === 2 ? "active" : ""} `}>
-                        {topSellingTwoSlidesItems3.map((topSellingTwoSlidesItem3) =>
-                            <div key={topSellingTwoSlidesItem3.key} className="product-widget">
+                        {topSellingTwo2SlidesItems3.map((topSellingTwo2SlidesItem3) =>
+                            <div key={topSellingTwo2SlidesItem3.key} className="product-widget">
                                 <div className="product-img">
-                                    <img src={topSellingTwoSlidesItem3.img} alt=""/>
+                                    <img src={topSellingTwo2SlidesItem3.img} alt=""/>
                                 </div>
                                 <div className="product-body">
-                                    <p className="product-category">{topSellingTwoSlidesItem3.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingTwoSlidesItem3.names}</a></h3>
-                                    <h4 className="product-price">{topSellingTwoSlidesItem3.price} <del
-                                        className="product-old-price">{topSellingTwoSlidesItem3.oldprice}</del></h4>
+                                    <p className="product-category">{topSellingTwo2SlidesItem3.category}</p>
+                                    <h3 className="product-name"><a href="#">{topSellingTwo2SlidesItem3.names}</a></h3>
+                                    <h4 className="product-price">{topSellingTwo2SlidesItem3.price} <del
+                                        className="product-old-price">{topSellingTwo2SlidesItem3.oldprice}</del></h4>
                                 </div>
                             </div>
                         )}
