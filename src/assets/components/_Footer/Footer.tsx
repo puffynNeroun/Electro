@@ -1,3 +1,15 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
+import {faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+/*<li><a href="#"><FontAwesomeIcon icon={faVisaCreditCard} /></a></li>
+<li><a href="#"><FontAwesomeIcon icon={faCreditCard} /></a></li>
+<li><a href="#"><FontAwesomeIcon icon={faPaypalCreditCard} /></a></li>
+<li><a href="#"><FontAwesomeIcon icon={faMasterCardCreditCard} /></a></li>
+<li><a href="#"><FontAwesomeIcon icon={faDiscoverCreditCard} /></a></li>
+<li><a href="#"><FontAwesomeIcon icon={faAmericanExpressCreditCard} /></a></li>*/
+import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
+
 
 
 const Footer = () => {
@@ -15,9 +27,9 @@ const Footer = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut.</p>
                                 <ul className="footer-links">
-                                    <li><a href="#"><i className="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-                                    <li><a href="#"><i className="fa fa-phone"></i>+021-95-51-84</a></li>
-                                    <li><a href="#"><i className="fa fa-envelope-o"></i>email@email.com</a></li>
+                                    <li><a href="#"><FontAwesomeIcon icon={faMapMarker} className="fa fa-map-marker" />1734 Stonecoal Road</a></li>
+                                    <li><a href="#"><FontAwesomeIcon icon={faPhone} style={{color: '#B9BABC'}}  className="fa fa-phone" />+021-95-51-84</a></li>
+                                    <li><a href="#"><FontAwesomeIcon icon={faEnvelope} className="fa fa-envelope-o" />email@email.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -74,20 +86,11 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-12 text-center">
                             <ul className="footer-payments">
-                                <li><a href="#"><i className="fa fa-cc-visa"></i></a></li>
-                                <li><a href="#"><i className="fa fa-credit-card"></i></a></li>
-                                <li><a href="#"><i className="fa fa-cc-paypal"></i></a></li>
-                                <li><a href="#"><i className="fa fa-cc-mastercard"></i></a></li>
-                                <li><a href="#"><i className="fa fa-cc-discover"></i></a></li>
-                                <li><a href="#"><i className="fa fa-cc-amex"></i></a></li>
+                                <li><a href="#"><FontAwesomeIcon icon={faCreditCard} />Pay</a></li>
                             </ul>
                             <span className="copyright">
-								{/*Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.*/}
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i
-                                className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                                                                        target="_blank">Colorlib</a>
-                                {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.*/}
+                               2023
 							</span>
                         </div>
                     </div>

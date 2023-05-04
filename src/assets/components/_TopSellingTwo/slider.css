@@ -33,7 +33,7 @@
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 29px;
+    top: 25px;
     right: 0;
     gap: 6px;
 }

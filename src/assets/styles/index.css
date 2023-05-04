@@ -301,6 +301,8 @@ textarea.input {
   position: relative;
   margin-bottom: 30px;
   margin-top: 15px;
+  align-self: flex-start;
+  margin-left: 22%;
 }
 
 .section-title .title {
@@ -1970,14 +1972,30 @@ textarea.input {
   margin: 30px auto;
 }
 
-.newsletter form:after {
-  content: "\f003";
-  font-family: FontAwesome;
+.isValide {
+  font-size: 13px!important;
+  position: absolute;
+  right: 30%;
+}
+
+/*.form-aw:after {*/
+/*  content: '\f003';*/
+/*  font-family: FontAwesome;*/
+/*  position: absolute;*/
+/*  font-size: 160px;*/
+/*  color: #E4E7ED;*/
+/*  top: 15px;*/
+/*  -ms-transform: translateY(-50%) rotate(15deg);*/
+/*  transform: translateY(-50%) rotate(15deg);*/
+/*  z-index: -1;*/
+/*  left: -90px;*/
+/*}*/
+
+.form-img {
   position: absolute;
   font-size: 160px;
   color: #E4E7ED;
   top: 15px;
-  -webkit-transform: translateY(-50%) rotate(15deg);
   -ms-transform: translateY(-50%) rotate(15deg);
   transform: translateY(-50%) rotate(15deg);
   z-index: -1;
@@ -1985,9 +2003,12 @@ textarea.input {
 }
 
 .newsletter form .input {
-  width: calc(100% - 160px);
+  width: calc(100% - 0);
   margin-right: -4px;
-  border-radius: 40px 0px 0px 40px;
+  border-radius: 40px;
+}
+.newsletter .form:invalid {
+  border: 3px solid red;
 }
 
 .newsletter form .newsletter-btn {
@@ -1997,7 +2018,11 @@ textarea.input {
   background: #D10024;
   color: #FFF;
   border: none;
-  border-radius: 0px 40px 40px 0px;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter .newsletter-follow {
@@ -2169,6 +2194,18 @@ textarea.input {
 .custom-dots .slick-dots {
   position: static;
   margin: 15px 0px;
+}
+
+.footer-links li a svg {
+  margin-right: 15px;
+}
+
+.footer-payments li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #B9BABC;
+  font-size: 1.5em;
 }
 
 /*=========================================================

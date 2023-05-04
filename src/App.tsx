@@ -26,13 +26,13 @@ const App = () => {
             <TopSelling/>
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={12}  md={4}>
                         <TopSellingTwo/>
                     </Col>
-                    <Col>
+                    <Col sm={12}  md={4}>
                         <TopSellingTwo1/>
                     </Col>
-                    <Col>
+                    <Col sm={12}  md={4}>
                         <TopSellingTwo2/>
                     </Col>
                 </Row>
