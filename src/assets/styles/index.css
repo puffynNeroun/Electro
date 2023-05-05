@@ -132,6 +132,7 @@ textarea.input {
 /*-- Number input --*/
 
 .input-number {
+  margin-left: 10px;
   position: relative;
 }
 
@@ -185,6 +186,7 @@ textarea.input {
 
 .input-select {
   padding: 0 15px;
+  margin-left: 10px;
   background: #FFF;
   border: 1px solid #E4E7ED;
   height: 40px;
@@ -427,6 +429,12 @@ textarea.input {
   display: inline-block;
   margin-right: 15px;
   font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .header-links li {
+    font-size: 11px;
+  }
 }
 
 .header-links li:last-child {
@@ -943,6 +951,22 @@ textarea.input {
 .product .product-body .product-name {
   text-transform: uppercase;
   font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .product-name a {
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  .product-category {
+    font-size: 10px !important;
+  }
+  .product-price {
+    font-size: 13px !important;
+  }
+  .product-old-price {
+    padding-left: 5px!important;
+  }
 }
 
 .product .product-body .product-name>a {

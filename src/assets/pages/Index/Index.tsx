@@ -14,7 +14,7 @@ const Index = () => {
             <TopSelling/>
             <ProductWidget />
             <SingUp/>
-            </div>
+        </div>
     );
 };
 

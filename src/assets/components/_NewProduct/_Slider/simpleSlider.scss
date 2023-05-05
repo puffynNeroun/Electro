@@ -30,3 +30,34 @@
 .slick-dots {
   display: none !important;
 }
+
+.section-title-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 25px;
+}
+
+.add-to-cart-btn-link {
+  color: white;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .section-tab-nav {
+    font-size: 15px;
+  }
+  .section-title-nav {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+

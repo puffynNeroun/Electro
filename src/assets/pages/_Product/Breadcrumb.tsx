@@ -1,4 +1,5 @@
-
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import '../../styles/index.css'
 const Breadcrumb = () => {
     return (
         <div>

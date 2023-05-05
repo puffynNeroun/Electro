@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {NavLink} from "react-router-dom";
 import './BurgerMenu.css';
 
 type BurgerMenuProps = {
@@ -21,7 +22,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ links }) => {
                 <ul className="burger-menu__links">
                     {links.map((link, index) => (
                         <li key={index}>
-                            <a href={link.url}>{link.label}</a>
+                            <NavLink to={link.url}>{link.label}</NavLink>
                         </li>
                     ))}
                 </ul>

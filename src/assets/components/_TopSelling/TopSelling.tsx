@@ -11,6 +11,7 @@ import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import '../../../assets/styles/index.css'
 import './_Slider/simpleSlider.scss'
 import {topSellingItems} from "./_Slider/simpleSlider.data";
+import {NavLink} from "react-router-dom";
 
 
 export default class NewProduct extends Component {
@@ -27,14 +28,14 @@ export default class NewProduct extends Component {
         return (
             <div style={{marginTop: '40px'}}>
                 <Container>
-                    <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '20px'}}>
-                        <h2 style={{fontSize: '25px', textTransform: 'uppercase'}}> Top selling</h2>
+                    <div className='section-title-nav'>
+                        <h2 className='product-title'> Top selling</h2>
                         <div className="section-nav">
                             <ul className="section-tab-nav tab-nav">
-                                <li className="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-                                <li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-                                <li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-                                <li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+                                <li className="active"><NavLink data-toggle="tab" to="#tab1">Laptops</NavLink></li>
+                                <li><NavLink data-toggle="tab" to="#tab2">Smartphones</NavLink></li>
+                                <li><NavLink data-toggle="tab" to="#tab3">Cameras</NavLink></li>
+                                <li><NavLink data-toggle="tab" to="#tab4">Accessories</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -81,9 +82,10 @@ export default class NewProduct extends Component {
                                     </div>
                                 </div>
                                 <div className="add-to-cart" style={{paddingTop: '38px'}}>
-                                    <button className="add-to-cart-btn" style={{fontSize: "inherit"}}><FontAwesomeIcon icon={faShoppingCart}
-                                                                                                                       className="fa fa-shopping-cart"/> add
-                                        to cart
+                                    <button className="add-to-cart-btn" style={{fontSize: "inherit"}}><FontAwesomeIcon
+                                        icon={faShoppingCart}
+                                        className="fa fa-shopping-cart"/><NavLink to={'/'} className='add-to-cart-btn-link'> add to
+                                        cart</NavLink>
                                     </button>
                                 </div>
                             </div>

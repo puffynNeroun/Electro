@@ -13,8 +13,23 @@
     outline: none;
 }
 
-.burger-menu__toggle.is-active .burger-menu__icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M18.3 5.7l-1.4-1.4L12 10.6 6.1 4.7 4.7 6.1l5.9 5.9-5.9 5.9 1.4 1.4L12 13.4l5.9 5.9 1.4-1.4-5.9-5.9z'/%3E%3C/svg%3E");
+.burger-menu__links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #15161D;
+    z-index: 10;
+    padding: 15px 30px 15px 30px;
+    right: 18px;
+    border-radius: 30px;
+}
+
+.burger-menu__links li a {
+    color: white;
+    margin-bottom: 20px;
 }
 
 .burger-menu__icon {

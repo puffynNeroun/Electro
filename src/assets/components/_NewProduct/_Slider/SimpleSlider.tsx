@@ -10,6 +10,7 @@ import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 
 import './simpleSlider.scss'
 import {sliderItems} from "./simpleSlider.data";
+import {NavLink} from "react-router-dom";
 
 
 export default class NewProduct extends Component {
@@ -26,14 +27,14 @@ export default class NewProduct extends Component {
         return (
             <div style={{marginTop: '40px'}}>
                 <Container>
-                    <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '20px'}}>
-                        <h2 style={{fontSize: '25px'}}> NEW PRODUCTS</h2>
+                    <div className='section-title-nav'>
+                        <h2 className='product-title'> NEW PRODUCTS</h2>
                         <div className="section-nav">
                             <ul className="section-tab-nav tab-nav">
-                                <li className="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-                                <li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-                                <li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-                                <li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+                                <li className="active"><NavLink data-toggle="tab" to="#tab1">Laptops</NavLink></li>
+                                <li><NavLink data-toggle="tab" to="#tab2">Smartphones</NavLink></li>
+                                <li><NavLink data-toggle="tab" to="#tab3">Cameras</NavLink></li>
+                                <li><NavLink data-toggle="tab" to="#tab4">Accessories</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -51,7 +52,7 @@ export default class NewProduct extends Component {
                                 </div>
                                 <div className="product-body">
                                     <p className="product-category">{sliderItem.category}</p>
-                                    <h3 className="product-name"><a href="#">product name goes here</a>
+                                    <h3 className="product-name"><NavLink to="/product">{sliderItem.names}</NavLink>
                                     </h3>
                                     <h4 className="product-price">{sliderItem.price}
                                         <del
@@ -80,9 +81,12 @@ export default class NewProduct extends Component {
                                     </div>
                                 </div>
                                 <div className="add-to-cart" style={{paddingTop: '38px'}}>
-                                    <button className="add-to-cart-btn" style={{fontSize: "inherit"}}><FontAwesomeIcon icon={faShoppingCart}
-                                                                                         className="fa fa-shopping-cart"/> add
-                                        to cart
+                                    <button className="add-to-cart-btn" style={{fontSize: "inherit"}}><FontAwesomeIcon
+                                        icon={faShoppingCart}
+                                        className="fa fa-shopping-cart"/> <NavLink to={'/'}
+                                                                                   className='add-to-cart-btn-link'> add
+                                        to
+                                        cart</NavLink>
                                     </button>
                                 </div>
                             </div>

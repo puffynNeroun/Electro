@@ -1,4 +1,5 @@
 import './stocks.scss'
+import {NavLink} from "react-router-dom";
 
 const Stocks = () => {
     return (
@@ -37,7 +38,7 @@ const Stocks = () => {
                             </ul>
                             <h2 className="text-uppercase">hot deal this week</h2>
                             <p>New Collection Up to 50% OFF</p>
-                            <a className="primary-btn cta-btn" href="#">Shop now</a>
+                            <NavLink className="primary-btn cta-btn" to="/">Shop now</NavLink>
                         </div>
                     </div>
                 </div>

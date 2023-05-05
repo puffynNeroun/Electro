@@ -6,6 +6,7 @@ import {faHeart} from '@fortawesome/free-solid-svg-icons';
 import {faDollar} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-regular-svg-icons'
+import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
 import logo from './../../img/logo.png'
 import Dropdown from "./__Dropdown/Dropdown.tsx";
 
@@ -25,7 +26,8 @@ const Header = () => {
                         <li><a href="#"><FontAwesomeIcon className="fa fa-phone" icon={faPhone}/> +021-95-51-84</a></li>
                         <li><a href="#"><FontAwesomeIcon className="fa fa-envelope-open-o"
                                                          icon={faEnvelopeOpen}/> email@email.com</a></li>
-                        <li><a href="#"><FontAwesomeIcon className='fa fa-dollar' icon={faDollar}/> 1734 Stonecoal Road</a>
+                        <li><a href="#"><FontAwesomeIcon className='fa fa-dollar' icon={faMapMarker}/> 1734 Stonecoal
+                            Road</a>
                         </li>
                     </ul>
                     <ul className="header-links pull-right">
@@ -73,7 +75,7 @@ const Header = () => {
                             <div className="header-ctn">
                                 {/* Wishlist */}
                                 <div>
-                                    <a href="#">
+                                    <NavLink to="/">
                                         <FontAwesomeIcon className="fa fa-heart" icon={faHeart}/>
                                         <span style=
                                                   {
@@ -84,7 +86,7 @@ const Header = () => {
                                                   }
                                         >Your Wishlist</span>
                                         <div className="qty">2</div>
-                                    </a>
+                                    </NavLink>
                                 </div>
                                 {/* /Wishlist */}
 
@@ -97,12 +99,19 @@ const Header = () => {
 
                                 {/* Menu Toogle */}
                                 <div className="menu-toggle">
-                                    <a href="#">
-                                        <BurgerMenu
-                                            links={[    { label: 'Home', url: '/' },    { label: 'About', url: '/about' },    { label: 'Contact', url: '/contact' },  ]}
-                                        />
-                                        <span>Menu</span>
-                                    </a>
+                                    <BurgerMenu
+                                        links={[{label: 'Home', url: '/'}, {
+                                            label: 'Hot Deals',
+                                            url: '/hotDeals'
+                                        }, {label: 'Categories', url: '/categories'}, {
+                                            label: 'Laptops',
+                                            url: '/laptops'
+                                        }, {label: 'Smartphones', url: '/smartphones'}, {
+                                            label: 'Cameras',
+                                            url: '/cameras'
+                                        }, {label: 'Accessories', url: '/accessories'}
+                                        ]}
+                                    />
                                 </div>
                                 {/* /Menu Toogle */}
                             </div>

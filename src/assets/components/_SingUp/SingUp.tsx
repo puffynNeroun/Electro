@@ -5,6 +5,7 @@ import fb from './../../img/facebook.svg'
 import twitter from './../../img/twitter.svg'
 import instagram from './../../img/instagram.svg'
 import pinterest from './../../img/pinterest.svg'
+import {NavLink} from "react-router-dom";
 const SingUp = () => {
 
         const [email, setEmail] = useState('')
@@ -55,18 +56,18 @@ const SingUp = () => {
                             </form>
                             <ul className="newsletter-follow">
                                 <li>
-                                    <a href="#">
+                                    <NavLink to="/">
                                         <img src={fb} alt="fb" />
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a href="#"> <img src={twitter} alt="twitter" /></a>
+                                    <NavLink to="/"> <img src={twitter} alt="twitter" /></NavLink>
                                 </li>
                                 <li>
-                                    <a href="#"><img src={instagram} alt="instagram" /></a>
+                                    <NavLink to="/"><img src={instagram} alt="instagram" /></NavLink>
                                 </li>
                                 <li>
-                                    <a href="#"><img src={pinterest} alt="pinterest" /></a>
+                                    <NavLink to="/"><img src={pinterest} alt="pinterest" /></NavLink>
                                 </li>
                             </ul>
                         </div>
