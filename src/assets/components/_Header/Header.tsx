@@ -10,6 +10,8 @@ import logo from './../../img/logo.png'
 import Dropdown from "./__Dropdown/Dropdown.tsx";
 
 import './header.scss'
+import BurgerMenu from "./Menu/BurgerMenu";
+
 
 const Header = () => {
 
@@ -95,7 +97,9 @@ const Header = () => {
                                 {/* Menu Toogle */}
                                 <div className="menu-toggle">
                                     <a href="#">
-                                        <i className="fa fa-bars"></i>
+                                        <BurgerMenu
+                                            links={[    { label: 'Home', url: '/' },    { label: 'About', url: '/about' },    { label: 'Contact', url: '/contact' },  ]}
+                                        />
                                         <span>Menu</span>
                                     </a>
                                 </div>
