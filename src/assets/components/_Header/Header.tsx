@@ -11,6 +11,7 @@ import Dropdown from "./__Dropdown/Dropdown.tsx";
 
 import './header.scss'
 import BurgerMenu from "./Menu/BurgerMenu";
+import {NavLink} from "react-router-dom";
 
 
 const Header = () => {
@@ -42,17 +43,17 @@ const Header = () => {
                     {/* row */}
                     <div className="row">
                         {/* LOGO */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-lg-3">
                             <div className="header-logo">
-                                <a href="#" className="logo">
+                                <NavLink to="/" className="logo">
                                     <img src={logo} alt="logo"/>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         {/* /LOGO */}
 
                         {/* SEARCH BAR */}
-                        <div className="col-md-6">
+                        <div className="col-md-9 col-lg-6">
                             <div className="header-search">
                                 <form>
                                     <select className="input-select" style={{color: 'gray'}}>
@@ -68,7 +69,7 @@ const Header = () => {
                         {/* /SEARCH BAR */}
 
                         {/* ACCOUNT */}
-                        <div className="col-md-3 clearfix">
+                        <div className="col-md-12 col-lg-3 clearfix">
                             <div className="header-ctn">
                                 {/* Wishlist */}
                                 <div>

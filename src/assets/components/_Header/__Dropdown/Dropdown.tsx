@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {faClose} from "@fortawesome/free-solid-svg-icons";
 import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons";
+import {NavLink} from "react-router-dom";
 
 function Dropdown() {
     const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +64,7 @@ function Dropdown() {
                     </div>
                     <div className="cart-btns">
                         <a href="#">View Cart</a>
-                        <a href="#">Checkout <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right" /></a>
+                        <NavLink to="/checkout">Checkout <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right" /></NavLink>
                     </div>
                 </div>
             )}

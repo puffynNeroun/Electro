@@ -1,14 +1,12 @@
-import Header from "../../components/_Header/Header";
-import Navigation from "../../components/_Navigation/Navigation";
+
 import SingUp from "../../components/_SingUp/SingUp";
-import Footer from "../../components/_Footer/Footer";
 import '../../styles/index.css'
+import {NavLink} from "react-router-dom";
 
 const Checkout = () => {
     return (
         <div>
-            <Header/>
-            <Navigation/>
+
              {/*BREADCRUMB*/}
             <div id="breadcrumb" className="section">
                 {/* container */}
@@ -18,7 +16,7 @@ const Checkout = () => {
                         <div className="col-md-12">
                             <h3 className="breadcrumb-header">Checkout</h3>
                             <ul className="breadcrumb-tree">
-                                <li><a href="#">Home</a></li>
+                                <li><NavLink to="/">Home</NavLink></li>
                                 <li className="active">Checkout</li>
                             </ul>
                         </div>
@@ -244,7 +242,7 @@ const Checkout = () => {
             </div>
             {/* /NEWSLETTER */}
             <SingUp/>
-            <Footer/>
+
         </div>
     );
 };

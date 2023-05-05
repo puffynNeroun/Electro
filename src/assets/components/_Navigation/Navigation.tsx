@@ -1,4 +1,5 @@
 import './navigation.scss'
+import {NavLink} from "react-router-dom";
 
 
 const Navigation = () => {
@@ -10,8 +11,8 @@ const Navigation = () => {
                 <div id="responsive-nav">
                      {/* NAV */}
                     <ul className="main-nav nav navbar-nav">
-                        <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#">Hot Deals</a></li>
+                        <li ><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/">Hot Deals</NavLink></li>
                         <li><a href="#">Categories</a></li>
                         <li><a href="#">Laptops</a></li>
                         <li><a href="#">Smartphones</a></li>

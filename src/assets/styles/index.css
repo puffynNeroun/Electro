@@ -2240,6 +2240,18 @@ textarea.input {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .shop-body h3 {
+    font-size: calc(0.6rem + 0.6vw);
+  }
+
+  .shop-body a {
+    font-size: calc(0.4rem + 0.6vw);
+  }
+
+  .section-title {
+    margin-left: 0;
+  }
+
   /*#header .container .row .clearfix {*/
   /*  */
   /*}*/
@@ -2256,6 +2268,19 @@ textarea.input {
   }
   .section-tab-nav li {
     margin-top: 10px;
+  }
+
+  .section-title {
+    margin-left: 22%;
+  }
+  .slick-list {
+    padding-left: 0;
+  }
+
+  .slick-arrow.slick-prev {
+    position: relative;
+    top: 256px;
+    left: -4px;
   }
 }
 
