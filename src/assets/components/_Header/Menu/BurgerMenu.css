@@ -1,0 +1,53 @@
+.burger-menu__toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.burger-menu__toggle:focus {
+    outline: none;
+}
+
+.burger-menu__toggle.is-active .burger-menu__icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M18.3 5.7l-1.4-1.4L12 10.6 6.1 4.7 4.7 6.1l5.9 5.9-5.9 5.9 1.4 1.4L12 13.4l5.9 5.9 1.4-1.4-5.9-5.9z'/%3E%3C/svg%3E");
+}
+
+.burger-menu__icon {
+    display: block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.burger-menu__icon::before,
+.burger-menu__icon::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.2s ease-out;
+    width: 100%;
+}
+
+.burger-menu__icon::before {
+    top: -8px;
+}
+
+.burger-menu__icon::after {
+    bottom: -8px;
+}
+
+.burger-menu__toggle.is-active .burger-menu__icon::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu__toggle.is-active .burger-menu__icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+}

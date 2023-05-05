@@ -1,6 +1,10 @@
 import {useState} from "react";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import fb from './../../img/facebook.svg'
+import twitter from './../../img/twitter.svg'
+import instagram from './../../img/instagram.svg'
+import pinterest from './../../img/pinterest.svg'
 const SingUp = () => {
 
         const [email, setEmail] = useState('')
@@ -51,16 +55,18 @@ const SingUp = () => {
                             </form>
                             <ul className="newsletter-follow">
                                 <li>
-                                    <a href="#"><i className="fa fa-facebook"></i></a>
+                                    <a href="#">
+                                        <img src={fb} alt="fb" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i className="fa fa-twitter"></i></a>
+                                    <a href="#"> <img src={twitter} alt="twitter" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i className="fa fa-instagram"></i></a>
+                                    <a href="#"><img src={instagram} alt="instagram" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i className="fa fa-pinterest"></i></a>
+                                    <a href="#"><img src={pinterest} alt="pinterest" /></a>
                                 </li>
                             </ul>
                         </div>

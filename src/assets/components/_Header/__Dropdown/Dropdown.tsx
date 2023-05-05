@@ -3,6 +3,8 @@ import product01 from "../../../img/product01.png";
 import product02 from "../../../img/product02.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
+import {faClose} from "@fortawesome/free-solid-svg-icons";
+import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons";
 
 function Dropdown() {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +41,7 @@ function Dropdown() {
                                 <h4 className="product-price"><span className="qty">1x</span>$980.00
                                 </h4>
                             </div>
-                            <button className="delete"><i className="fa fa-close"></i></button>
+                            <button className="delete"><FontAwesomeIcon icon={faClose} className="fa fa-close" /></button>
                         </div>
 
                         <div className="product-widget">
@@ -52,7 +54,7 @@ function Dropdown() {
                                 <h4 className="product-price"><span className="qty">3x</span>$980.00
                                 </h4>
                             </div>
-                            <button className="delete"><i className="fa fa-close"></i></button>
+                            <button className="delete"><FontAwesomeIcon icon={faClose} className="fa fa-close" /></button>
                         </div>
                     </div>
                     <div className="cart-summary">
@@ -61,7 +63,7 @@ function Dropdown() {
                     </div>
                     <div className="cart-btns">
                         <a href="#">View Cart</a>
-                        <a href="#">Checkout <i className="fa fa-arrow-circle-right"></i></a>
+                        <a href="#">Checkout <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right" /></a>
                     </div>
                 </div>
             )}
