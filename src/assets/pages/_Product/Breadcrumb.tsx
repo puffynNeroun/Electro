@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import '../../styles/index.css'
+import {NavLink} from "react-router-dom";
 const Breadcrumb = () => {
     return (
         <div>
@@ -11,10 +12,10 @@ const Breadcrumb = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <ul className="breadcrumb-tree">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">All Categories</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Headphones</a></li>
+                                <li><NavLink to="/">Home</NavLink></li>
+                                <li><NavLink to="">All Categories</NavLink></li>
+                                <li><NavLink to="">Accessories</NavLink></li>
+                                <li><NavLink to="/">Headphones</NavLink></li>
                                 <li className="active">Product name goes here</li>
                             </ul>
                         </div>

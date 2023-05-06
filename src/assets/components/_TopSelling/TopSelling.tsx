@@ -53,7 +53,7 @@ export default class NewProduct extends Component {
                                 </div>
                                 <div className="product-body">
                                     <p className="product-category">{topSellingItem.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingItem.names}</a>
+                                    <h3 className="product-name"><NavLink to="/product">{topSellingItem.names}</NavLink>
                                     </h3>
                                     <h4 className="product-price">{topSellingItem.price}
                                         <del

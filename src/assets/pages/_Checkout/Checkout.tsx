@@ -204,7 +204,7 @@ const Checkout = () => {
                                     I've read and accept the <a href="#">terms & conditions</a>
                                 </label>
                             </div>
-                            <a href="#" className="primary-btn order-submit">Place order</a>
+                            <NavLink to="/blank" className="primary-btn order-submit">Place order</NavLink>
                         </div>
                         {/* /Order Details */}
                     </div>

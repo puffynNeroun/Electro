@@ -3,7 +3,7 @@ import {Col, Row} from "react-bootstrap";
 import "./slider.css";
 import './TopSellingTwo.scss'
 import {topSellingTwoSlidesItems, topSellingTwoSlidesItems2, topSellingTwoSlidesItems3} from "../_TopSelling/_Slider/simpleSlider.data";
-
+import {NavLink} from "react-router-dom";
 const Test = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const handlePrevSlide = () => {
@@ -36,7 +36,7 @@ const Test = () => {
                                 </div>
                                 <div className="product-body">
                                     <p className="product-category">{topSellingTwoSlidesItem.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingTwoSlidesItem.names}</a></h3>
+                                    <h3 className="product-name"><NavLink to="/product">{topSellingTwoSlidesItem.names}</NavLink></h3>
                                     <h4 className="product-price">{topSellingTwoSlidesItem.price} <del
                                         className="product-old-price">{topSellingTwoSlidesItem.oldprice}</del></h4>
                                 </div>
@@ -51,7 +51,7 @@ const Test = () => {
                                 </div>
                                 <div className="product-body">
                                     <p className="product-category">{topSellingTwoSlidesItem2.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingTwoSlidesItem2.names}</a></h3>
+                                    <h3 className="product-name"><NavLink to="/product">{topSellingTwoSlidesItem2.names}</NavLink></h3>
                                     <h4 className="product-price">{topSellingTwoSlidesItem2.price} <del
                                         className="product-old-price">{topSellingTwoSlidesItem2.oldprice}</del></h4>
                                 </div>
@@ -66,7 +66,7 @@ const Test = () => {
                                 </div>
                                 <div className="product-body">
                                     <p className="product-category">{topSellingTwoSlidesItem3.category}</p>
-                                    <h3 className="product-name"><a href="#">{topSellingTwoSlidesItem3.names}</a></h3>
+                                    <h3 className="product-name"><NavLink to="/product">{topSellingTwoSlidesItem3.names}</NavLink></h3>
                                     <h4 className="product-price">{topSellingTwoSlidesItem3.price} <del
                                         className="product-old-price">{topSellingTwoSlidesItem3.oldprice}</del></h4>
                                 </div>

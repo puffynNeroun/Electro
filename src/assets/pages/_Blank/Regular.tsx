@@ -1,4 +1,6 @@
 import '../../styles/index.css'
+import './regular.scss'
+import {NavLink} from "react-router-dom";
 
 const Regular = () => {
     return (
@@ -6,36 +8,47 @@ const Regular = () => {
             <div id="breadcrumb" className="section">
                 {/*container */}
                 <div className="container">
-                   {/* row */}
+                    {/* row */}
                     <div className="row">
                         <div className="col-md-12">
-                            <h3 className="breadcrumb-header">Regular Page</h3>
+                            <h3 className="breadcrumb-header">Замовлення</h3>
                             <ul className="breadcrumb-tree">
-                                <li><a href="_Blank/components#">Home</a></li>
+                                <li><NavLink to="/">Home</NavLink></li>
                                 <li className="active">Blank</li>
                             </ul>
                         </div>
                     </div>
-                   {/* /row */}
+                    {/* /row */}
                 </div>
-               {/* /container */}
+                {/* /container */}
             </div>
-           {/* /BREADCRUMB */}
+            {/* /BREADCRUMB */}
 
-           {/* SECTION */}
+            {/* SECTION */}
             <div className="section">
-               {/* container */}
+                {/* container */}
                 <div className="container">
-                   {/* row */}
+                    {/* row */}
                     <div className="row">
+                        <p className='regular__title'>Дякуємо за замовлення !</p>
+                        <div className='regular-block'>
+                            <p className='regular-block__text'>Ваше замовлення було <span>успішно</span> оформлене та надіслане відділу
+                            обробки. Наша адміністрація
+                            перевірить Ваше замовлення найближчим часом, щоб переконатися, що все в порядку, та
+                            підготуємо його для відправки. <br/>
+                            <br/>
+                            Якщо будуть потрібні додаткові деталі щодо Вашого замовлення, ми зв'яжемося з Вами. Будьте
+                            впевнені, що ми робимо все можливе, щоб забезпечити якісний сервіс та задовільнити Ваші
+                            потреби.</p>
+                        </div>
                     </div>
-                   {/* /row */}
+                    {/* /row */}
                 </div>
-               {/* /container */}
+                {/* /container */}
             </div>
-           {/* /SECTION */}
+            {/* /SECTION */}
         </>
-);
+    );
 };
 
 export default Regular;

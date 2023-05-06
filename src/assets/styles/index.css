@@ -132,8 +132,12 @@ textarea.input {
 /*-- Number input --*/
 
 .input-number {
-  margin-left: 10px;
+  margin: 0 10px;
   position: relative;
+}
+
+.input-number.price-min {
+  margin-left: 0;
 }
 
 .input-number input[type="number"]::-webkit-inner-spin-button, .input-number input[type="number"]::-webkit-outer-spin-button {
@@ -566,7 +570,7 @@ textarea.input {
   -webkit-box-shadow: 0 0 0 2px #E4E7ED;
   box-shadow: 0 0 0 2px #E4E7ED;
   z-index: 99;
-  right: 0;
+  right: 5px;
 }
 
 .dropdown {
@@ -903,6 +907,8 @@ textarea.input {
 }
 
 .product .product-img {
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
@@ -1329,6 +1335,12 @@ textarea.input {
 
 .noUi-handle:before, .noUi-handle:after {
   display: none;
+}
+
+.price-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .price-filter .input-number {

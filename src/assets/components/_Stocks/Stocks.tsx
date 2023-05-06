@@ -38,7 +38,7 @@ const Stocks = () => {
                             </ul>
                             <h2 className="text-uppercase">hot deal this week</h2>
                             <p>New Collection Up to 50% OFF</p>
-                            <NavLink className="primary-btn cta-btn" to="/">Shop now</NavLink>
+                            <NavLink className="primary-btn cta-btn" to="/store">Shop now</NavLink>
                         </div>
                     </div>
                 </div>
