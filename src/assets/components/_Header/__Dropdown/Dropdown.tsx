@@ -63,7 +63,6 @@ function Dropdown() {
                         <h5>SUBTOTAL: $2940.00</h5>
                     </div>
                     <div className="cart-btns">
-                        <a href="#">View Cart</a>
                         <NavLink to="/checkout">Checkout <FontAwesomeIcon icon={faArrowCircleRight} className="fa fa-arrow-circle-right" /></NavLink>
                     </div>
                 </div>

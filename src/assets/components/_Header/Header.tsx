@@ -3,7 +3,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPhone} from '@fortawesome/free-solid-svg-icons';
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
-import {faDollar} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-regular-svg-icons'
 import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
@@ -31,7 +30,6 @@ const Header = () => {
                         </li>
                     </ul>
                     <ul className="header-links pull-right">
-                        <li><a href="#"><FontAwesomeIcon className='fa fa-dollar' icon={faDollar}/> USD</a></li>
                         <li><a href="#"><FontAwesomeIcon className="fa fa-user-o" icon={faUser}/> My Account</a></li>
                     </ul>
                 </div>

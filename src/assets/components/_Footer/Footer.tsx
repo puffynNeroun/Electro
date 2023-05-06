@@ -14,8 +14,8 @@ const Footer = () => {
                 {/* container*/}
                 <div className="container">
                     {/* row*/}
-                    <div className="row">
-                        <div className="col-md-3 col-xs-6">
+                    <div className="row" style={{justifyContent: 'space-between', alignItems: 'center'}}>
+                        <div className="col-md-4 col-xs-6">
                             <div className="footer">
                                 <h3 className="footer-title">About Us</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -28,7 +28,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-3 col-xs-6">
+                        <div className="col-md-4 col-xs-6">
                             <div className="footer">
                                 <h3 className="footer-title">Categories</h3>
                                 <ul className="footer-links">
@@ -41,20 +41,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-3 col-xs-6">
-                            <div className="footer">
-                                <h3 className="footer-title">Information</h3>
-                                <ul className="footer-links">
-                                    <li><NavLink to="/">About Us</NavLink ></li>
-                                    <li><NavLink to="/">Contact Us</NavLink ></li>
-                                    <li><NavLink to="/">Privacy Policy</NavLink ></li>
-                                    <li><NavLink to="/">Orders and Returns</NavLink ></li>
-                                    <li><NavLink to="/">Terms & Conditions</NavLink ></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3 col-xs-6">
+                        <div className="col-md-4 col-xs-6">
                             <div className="footer">
                                 <h3 className="footer-title">Service</h3>
                                 <ul className="footer-links">
@@ -62,7 +49,6 @@ const Footer = () => {
                                     <li><NavLink to="/">View Cart</NavLink ></li>
                                     <li><NavLink to="/">Wishlist</NavLink ></li>
                                     <li><NavLink to="/">Track My Order</NavLink ></li>
-                                    <li><NavLink to="/">Help</NavLink ></li>
                                 </ul>
                             </div>
                         </div>
