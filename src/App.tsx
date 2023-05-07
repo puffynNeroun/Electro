@@ -7,6 +7,7 @@ import Navigation from "./assets/components/_Navigation/Navigation";
 import Blank from "./assets/pages/_Blank/Blank";
 import Product from "./assets/pages/_Product/Product";
 import Store from "./assets/pages/_Store/Store";
+import MyAccount from "./assets/pages/_MyAccount/MyAccount";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/checkout" element={<Checkout/>}/>
                 <Route path="/product" element={<Product/>}/>
                 <Route path='/store' element={<Store/>}/>
+                <Route path='/myAccount' element={<MyAccount/>}/>
             </Routes>
             <Footer/>
         </>

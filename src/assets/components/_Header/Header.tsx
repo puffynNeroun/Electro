@@ -30,7 +30,7 @@ const Header = () => {
                         </li>
                     </ul>
                     <ul className = "header-links pull-right">
-                        <li><a href="#"><FontAwesomeIcon className="fa fa-user-o" icon={faUser}/> Мій аккаунт</a></li>
+                        <li><NavLink to="/myAccount"><FontAwesomeIcon className="fa fa-user-o" icon={faUser}/> Мій аккаунт</NavLink></li>
                     </ul>
                 </div>
             </div>

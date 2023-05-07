@@ -120,10 +120,10 @@ const ProductMainSec1 = () => {
 
                                 <ul className="product-main-btns">
                                     <li><NavLink to="/"><FontAwesomeIcon icon={faHeart}
-                                                                         className="fa fa-heart-o"></FontAwesomeIcon>додати
+                                                                         className="fa fa-heart-o" style={{paddingRight: '5px'}}></FontAwesomeIcon>додати
                                         до списку бажань</NavLink></li>
                                     <li><NavLink to="/"><FontAwesomeIcon icon={faExchange}
-                                                                         className="fa fa-exchange"></FontAwesomeIcon>додати
+                                                                         className="fa fa-exchange" style={{paddingRight: '5px'}}></FontAwesomeIcon>додати
                                         для порівняння</NavLink></li>
                                 </ul>
 

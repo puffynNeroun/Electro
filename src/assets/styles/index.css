@@ -995,6 +995,7 @@ textarea.input {
   position: relative;
   margin: 15px 0px 10px;
   height: 20px;
+  z-index: 0;
 }
 
 .product .product-body .product-rating>i {

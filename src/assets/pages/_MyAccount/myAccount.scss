@@ -1,0 +1,65 @@
+.myAccount {
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0 20px 30px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #ececea;
+    border-radius: 5px;
+    padding: 20px 30px;
+
+    &__name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__sign {
+        font-size: 11px;
+        opacity: 0.7;
+      }
+
+      &__return {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+
+    &__email {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__password {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__telephone {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__gender {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__registration {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.product__myAccount {
+  margin: 10px !important;
+}
