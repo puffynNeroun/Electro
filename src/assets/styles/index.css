@@ -888,6 +888,7 @@ textarea.input {
 	product
 \*----------------------------*/
 
+
 .product {
   position: relative;
   margin: 15px 0;
@@ -1073,6 +1074,7 @@ textarea.input {
   -webkit-transform: translate(-50%, -5px);
   -ms-transform: translate(-50%, -5px);
   transform: translate(-50%, -5px);
+  line-height: 100%;
 }
 
 .product .add-to-cart {
@@ -1133,6 +1135,10 @@ textarea.input {
 .product .add-to-cart .add-to-cart-btn:hover>i {
   opacity: 1;
   visibility: visible;
+}
+
+.add-to-cart-btn-link {
+  font-size: 13px;
 }
 
 /*----------------------------*\

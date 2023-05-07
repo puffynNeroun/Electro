@@ -29,13 +29,10 @@ export default class NewProduct extends Component {
             <div style={{marginTop: '40px'}}>
                 <Container>
                     <div className='section-title-nav'>
-                        <h2 className='product-title'> Top selling</h2>
+                        <h2 className='product-title'> ТОП ПРОДАЖІВ</h2>
                         <div className="section-nav">
                             <ul className="section-tab-nav tab-nav">
-                                <li className="active"><NavLink data-toggle="tab" to="#tab1">Laptops</NavLink></li>
-                                <li><NavLink data-toggle="tab" to="#tab2">Smartphones</NavLink></li>
-                                <li><NavLink data-toggle="tab" to="#tab3">Cameras</NavLink></li>
-                                <li><NavLink data-toggle="tab" to="#tab4">Accessories</NavLink></li>
+                                <li className="active"><NavLink data-toggle="tab" to="#tab1">Цікаві пропозиції</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -48,7 +45,7 @@ export default class NewProduct extends Component {
                                 <div className="product-img">
                                     <img src={topSellingItem.img} alt=""/>
                                     <div className="product-label">
-                                        <span className="new">NEW</span>
+                                        <span className="new">НОВИЙ</span>
                                     </div>
                                 </div>
                                 <div className="product-body">
@@ -70,22 +67,21 @@ export default class NewProduct extends Component {
                                         <button className="add-to-wishlist" style={{right: 0}}>
                                             <FontAwesomeIcon icon={faHeart}
                                                              className="fa fa-heart-o" style={{width: '15px'}}/><span
-                                            className="tooltipp">add to wishlist</span></button>
+                                            className="tooltipp">додати до списку бажань</span></button>
                                         <button className="add-to-compare"><FontAwesomeIcon icon={faExchange}
                                                                                             className="fa fa-exchange"
                                                                                             style={{width: '15px'}}/><span
-                                            className="tooltipp">add to compare</span></button>
+                                            className="tooltipp">додати для порівняння</span></button>
                                         <button className="quick-view"><FontAwesomeIcon icon={faEye}
                                                                                         className="fa fa-eye"
                                                                                         style={{width: '15px'}}/><span
-                                            className="tooltipp">quick view</span></button>
+                                            className="tooltipp">швидкий перегляд</span></button>
                                     </div>
                                 </div>
                                 <div className="add-to-cart" style={{paddingTop: '38px'}}>
                                     <button className="add-to-cart-btn" style={{fontSize: "inherit"}}><FontAwesomeIcon
                                         icon={faShoppingCart}
-                                        className="fa fa-shopping-cart"/><NavLink to={'/'} className='add-to-cart-btn-link'> add to
-                                        cart</NavLink>
+                                        className="fa fa-shopping-cart"/><NavLink to={'/'} className='add-to-cart-btn-link'> додати в кошик</NavLink>
                                     </button>
                                 </div>
                             </div>

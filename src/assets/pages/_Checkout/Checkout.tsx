@@ -14,10 +14,10 @@ const Checkout = () => {
                     {/* row */}
                     <div className="row">
                         <div className="col-md-12">
-                            <h3 className="breadcrumb-header">Checkout</h3>
+                            <h3 className="breadcrumb-header">ПЕРЕВІРКА</h3>
                             <ul className="breadcrumb-tree">
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li className="active">Checkout</li>
+                                <li><NavLink to="/">Головна</NavLink></li>
+                                <li className="active">ПЕРЕВІРКА</li>
                             </ul>
                         </div>
                     </div>
@@ -38,44 +38,44 @@ const Checkout = () => {
                             {/* Billing Details */}
                             <div className="billing-details">
                                 <div className="section-title">
-                                    <h3 className="title">Billing address</h3>
+                                    <h3 className="title">Платіжна адреса</h3>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="text" name="first-name" placeholder="First Name"/>
+                                    <input className="input" type="text" name="first-name" placeholder="Ім'я"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="text" name="last-name" placeholder="Last Name"/>
+                                    <input className="input" type="text" name="last-name" placeholder="Прізвище"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="email" name="email" placeholder="Email"/>
+                                    <input className="input" type="email" name="email" placeholder="Електронна пошта"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="text" name="address" placeholder="Address"/>
+                                    <input className="input" type="text" name="address" placeholder="Адреса"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="text" name="city" placeholder="City"/>
+                                    <input className="input" type="text" name="city" placeholder="Місто"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="text" name="country" placeholder="Country"/>
+                                    <input className="input" type="text" name="country" placeholder="Країна"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="text" name="zip-code" placeholder="ZIP Code"/>
+                                    <input className="input" type="text" name="zip-code" placeholder="Поштовий індекс"/>
                                 </div>
                                 <div className="form-group">
-                                    <input className="input" type="tel" name="tel" placeholder="Telephone"/>
+                                    <input className="input" type="tel" name="tel" placeholder="Телефон"/>
                                 </div>
                                 <div className="form-group">
                                     <div className="input-checkbox">
                                         <input type="checkbox" id="create-account"/>
                                         <label htmlFor="create-account">
                                             <span></span>
-                                            Create Account?
+                                            Створити акаунт?
                                         </label>
                                         <div className="caption">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                 tempor incididunt.</p>
                                             <input className="input" type="password" name="password"
-                                                   placeholder="Enter Your Password"/>
+                                                   placeholder="Введіть ваш пароль"/>
                                         </div>
                                     </div>
                                 </div>
@@ -85,41 +85,41 @@ const Checkout = () => {
                             {/* Shiping Details */}
                             <div className="shiping-details">
                                 <div className="section-title">
-                                    <h3 className="title">Shiping address</h3>
+                                    <h3 className="title">Адреса доставки</h3>
                                 </div>
                                 <div className="input-checkbox">
                                     <input type="checkbox" id="shiping-address"/>
                                     <label htmlFor="shiping-address">
                                         <span></span>
-                                        Ship to a diffrent address?
+                                        Надіслати на іншу адресу?
                                     </label>
                                     <div className="caption">
                                         <div className="form-group">
                                             <input className="input" type="text" name="first-name"
-                                                   placeholder="First Name"/>
+                                                   placeholder="Ім'я"/>
                                         </div>
                                         <div className="form-group">
                                             <input className="input" type="text" name="last-name"
-                                                   placeholder="Last Name"/>
+                                                   placeholder="Прізвище"/>
                                         </div>
                                         <div className="form-group">
-                                            <input className="input" type="email" name="email" placeholder="Email"/>
+                                            <input className="input" type="email" name="email" placeholder="Електронна пошта"/>
                                         </div>
                                         <div className="form-group">
-                                            <input className="input" type="text" name="address" placeholder="Address"/>
+                                            <input className="input" type="text" name="address" placeholder="Адреса"/>
                                         </div>
                                         <div className="form-group">
-                                            <input className="input" type="text" name="city" placeholder="City"/>
+                                            <input className="input" type="text" name="city" placeholder="Місто"/>
                                         </div>
                                         <div className="form-group">
-                                            <input className="input" type="text" name="country" placeholder="Country"/>
+                                            <input className="input" type="text" name="country" placeholder="Країна"/>
                                         </div>
                                         <div className="form-group">
                                             <input className="input" type="text" name="zip-code"
-                                                   placeholder="ZIP Code"/>
+                                                   placeholder="Поштовий індекс"/>
                                         </div>
                                         <div className="form-group">
-                                            <input className="input" type="tel" name="tel" placeholder="Telephone"/>
+                                            <input className="input" type="tel" name="tel" placeholder="Телефон"/>
                                         </div>
                                     </div>
                                 </div>
@@ -136,29 +136,29 @@ const Checkout = () => {
                         {/* Order Details */}
                         <div className="col-md-5 order-details">
                             <div className="section-title text-center">
-                                <h3 className="title">Your Order</h3>
+                                <h3 className="title">Ваше замовлення</h3>
                             </div>
                             <div className="order-summary">
                                 <div className="order-col">
-                                    <div><strong>PRODUCT</strong></div>
-                                    <div><strong>TOTAL</strong></div>
+                                    <div><strong>ПРОДУКТ</strong></div>
+                                    <div><strong>РАЗОМ</strong></div>
                                 </div>
                                 <div className="order-products">
                                     <div className="order-col">
-                                        <div>1x Product Name Goes Here</div>
+                                        <div>Тут вказується 1 назва продукту</div>
                                         <div>$980.00</div>
                                     </div>
                                     <div className="order-col">
-                                        <div>2x Product Name Goes Here</div>
+                                        <div>Тут вказується 2 назви продукту</div>
                                         <div>$980.00</div>
                                     </div>
                                 </div>
                                 <div className="order-col">
-                                    <div>Shiping</div>
-                                    <div><strong>FREE</strong></div>
+                                    <div>Доставка</div>
+                                    <div><strong>БЕЗКОШТОВНО</strong></div>
                                 </div>
                                 <div className="order-col">
-                                    <div><strong>TOTAL</strong></div>
+                                    <div><strong>РАЗОМ</strong></div>
                                     <div><strong className="order-total">$2940.00</strong></div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@ const Checkout = () => {
                                     <input type="radio" name="payment" id="payment-1"/>
                                     <label htmlFor="payment-1">
                                         <span></span>
-                                        Direct Bank Transfer
+                                        Прямий банківський переказ
                                     </label>
                                     <div className="caption">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -178,7 +178,7 @@ const Checkout = () => {
                                     <input type="radio" name="payment" id="payment-2"/>
                                     <label htmlFor="payment-2">
                                         <span></span>
-                                        Cheque Payment
+                                        Оплата чеком
                                     </label>
                                     <div className="caption">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -189,7 +189,7 @@ const Checkout = () => {
                                     <input type="radio" name="payment" id="payment-3"/>
                                     <label htmlFor="payment-3">
                                         <span></span>
-                                        Paypal System
+                                        Система Paypal
                                     </label>
                                     <div className="caption">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -201,10 +201,10 @@ const Checkout = () => {
                                 <input type="checkbox" id="terms"/>
                                 <label htmlFor="terms">
                                     <span></span>
-                                    I've read and accept the <a href="#">terms & conditions</a>
+                                    Я прочитав і приймаю <a href="#">умови</a>
                                 </label>
                             </div>
-                            <NavLink to="/blank" className="primary-btn order-submit">Place order</NavLink>
+                            <NavLink to="/blank" className="primary-btn order-submit">Зробити замовлення</NavLink>
                         </div>
                         {/* /Order Details */}
                     </div>

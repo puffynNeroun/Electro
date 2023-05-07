@@ -19,10 +19,10 @@ const Store = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <ul className="breadcrumb-tree">
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li><NavLink to="">All Categories</NavLink></li>
+                                <li><NavLink to="/">Головна</NavLink></li>
+                                <li><NavLink to="">Всі категорії</NavLink></li>
                                 <li><NavLink to="">Accessories</NavLink></li>
-                                <li className="active">Headphones (227,490 Results)</li>
+                                <li className="active">Холодильники (227 490 результатів)</li>
                             </ul>
                         </div>
                     </div>
@@ -42,14 +42,14 @@ const Store = () => {
                         <div id="aside" className="col-md-3">
                             {/* aside Widget */}
                             <div className="aside">
-                                <h3 className="aside-title">Categories</h3>
+                                <h3 className="aside-title">Категорії</h3>
                                 <div className="checkbox-filter">
 
                                     <div className="input-checkbox">
                                         <input type="checkbox" id="category-1"/>
                                         <label htmlFor="category-1">
                                             <span></span>
-                                            Laptops
+                                            Холодильники
                                             <small>(120)</small>
                                         </label>
                                     </div>
@@ -58,7 +58,7 @@ const Store = () => {
                                         <input type="checkbox" id="category-2"/>
                                         <label htmlFor="category-2">
                                             <span></span>
-                                            Smartphones
+                                            Пральні машини
                                             <small>(740)</small>
                                         </label>
                                     </div>
@@ -67,7 +67,7 @@ const Store = () => {
                                         <input type="checkbox" id="category-3"/>
                                         <label htmlFor="category-3">
                                             <span></span>
-                                            Cameras
+                                            Кухонні плити
                                             <small>(1450)</small>
                                         </label>
                                     </div>
@@ -76,7 +76,7 @@ const Store = () => {
                                         <input type="checkbox" id="category-4"/>
                                         <label htmlFor="category-4">
                                             <span></span>
-                                            Accessories
+                                            Аксесуари до ВПТ
                                             <small>(578)</small>
                                         </label>
                                     </div>
@@ -85,7 +85,7 @@ const Store = () => {
                                         <input type="checkbox" id="category-5"/>
                                         <label htmlFor="category-5">
                                             <span></span>
-                                            Laptops
+                                            Сушильні машини
                                             <small>(120)</small>
                                         </label>
                                     </div>
@@ -94,7 +94,7 @@ const Store = () => {
                                         <input type="checkbox" id="category-6"/>
                                         <label htmlFor="category-6">
                                             <span></span>
-                                            Smartphones
+                                            Пилососи
                                             <small>(740)</small>
                                         </label>
                                     </div>
@@ -104,7 +104,7 @@ const Store = () => {
 
                             {/* aside Widget */}
                             <div className="aside">
-                                <h3 className="aside-title">Price</h3>
+                                <h3 className="aside-title">Ціна</h3>
                                 <div className="price-filter">
                                     <div id="price-slider"></div>
                                     <div className="input-number price-min">
@@ -124,7 +124,7 @@ const Store = () => {
 
                             {/* aside Widget */}
                             <div className="aside">
-                                <h3 className="aside-title">Brand</h3>
+                                <h3 className="aside-title">Бренд</h3>
                                 <div className="checkbox-filter">
                                     <div className="input-checkbox">
                                         <input type="checkbox" id="brand-1"/>
@@ -180,7 +180,7 @@ const Store = () => {
 
                             {/* aside Widget */}
                             <div className="aside">
-                                <h3 className="aside-title">Top selling</h3>
+                                <h3 className="aside-title">Топ продажів</h3>
                                 {storeAsides.map((storeAside) =>
                                     <div key={storeAside.key} className="product-widget">
                                         <div className="product-img">
@@ -208,15 +208,15 @@ const Store = () => {
                             <div className="store-filter clearfix">
                                 <div className="store-sort">
                                     <label>
-                                        Sort By:
+                                        Сортувати за:
                                         <select className="input-select">
-                                            <option value="0">Popular</option>
-                                            <option value="1">Position</option>
+                                            <option value="0">Популярний</option>
+                                            <option value="1">Позиція</option>
                                         </select>
                                     </label>
 
                                     <label>
-                                        Show:
+                                        Показати:
                                         <select className="input-select">
                                             <option value="0">20</option>
                                             <option value="1">50</option>
@@ -263,16 +263,16 @@ const Store = () => {
                                                         <FontAwesomeIcon icon={faHeart}
                                                                          className="fa fa-heart-o"
                                                                          style={{width: '15px'}}/><span
-                                                        className="tooltipp">add to wishlist</span></button>
+                                                        className="tooltipp">додати до списку бажань</span></button>
                                                     <button className="add-to-compare"><FontAwesomeIcon
                                                         icon={faExchange}
                                                         className="fa fa-exchange"
                                                         style={{width: '15px'}}/><span
-                                                        className="tooltipp">add to compare</span></button>
+                                                        className="tooltipp">додати для порівняння</span></button>
                                                     <button className="quick-view"><FontAwesomeIcon icon={faEye}
                                                                                                     className="fa fa-eye"
                                                                                                     style={{width: '15px'}}/><span
-                                                        className="tooltipp">quick view</span></button>
+                                                        className="tooltipp">швидкий перегляд</span></button>
                                                 </div>
                                             </div>
                                             <div className="add-to-cart add-to-cart__product__btn"
@@ -281,9 +281,7 @@ const Store = () => {
                                                     <FontAwesomeIcon
                                                         icon={faShoppingCart}
                                                         className="fa fa-shopping-cart"/> <NavLink to={'/'}
-                                                                                                   className='add-to-cart-btn-link'> add
-                                                    to
-                                                    cart</NavLink>
+                                                                                                   className='add-to-cart-btn-link'> додати в кошик</NavLink>
                                                 </button>
                                             </div>
                                         </div>

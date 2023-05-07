@@ -1,5 +1,5 @@
 import Collection from "../../components/_Collection/Collection";
-import NewProduct from "../../components/_NewProduct/_Slider/SimpleSlider";
+import NewProduct from "../../components/_NewProduct/_Slider/NewProductSlider";
 import Stocks from "../../components/_Stocks/Stocks";
 import TopSelling from "../../components/_TopSelling/TopSelling";
 import ProductWidget from "../../components/_ProductWidget/ProductWidget";

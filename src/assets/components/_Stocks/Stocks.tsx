@@ -14,31 +14,31 @@ const Stocks = () => {
                                 <li>
                                     <div>
                                         <h3>02</h3>
-                                        <span>Days</span>
+                                        <span>Днів</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <h3>10</h3>
-                                        <span>Hours</span>
+                                        <span>Години</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <h3>34</h3>
-                                        <span>Mins</span>
+                                        <span>Хв</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <h3>60</h3>
-                                        <span>Secs</span>
+                                        <span>Сек</span>
                                     </div>
                                 </li>
                             </ul>
-                            <h2 className="text-uppercase">hot deal this week</h2>
-                            <p>New Collection Up to 50% OFF</p>
-                            <NavLink className="primary-btn cta-btn" to="/store">Shop now</NavLink>
+                            <h2 className="text-uppercase">гаряча пропозиція цього тижня</h2>
+                            <p>Нова колекція ЗНИЖКИ до 50%.</p>
+                            <NavLink className="primary-btn cta-btn" to="/store">Здійснити покупку</NavLink>
                         </div>
                     </div>
                 </div>

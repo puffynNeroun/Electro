@@ -13,8 +13,8 @@ const Regular = () => {
                         <div className="col-md-12">
                             <h3 className="breadcrumb-header">Замовлення</h3>
                             <ul className="breadcrumb-tree">
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li className="active">Blank</li>
+                                <li><NavLink to="/">Головна</NavLink></li>
+                                <li className="active">Підтвердження</li>
                             </ul>
                         </div>
                     </div>

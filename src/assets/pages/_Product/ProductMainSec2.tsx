@@ -18,7 +18,7 @@ const ProductMainSec2 = () => {
 
                         <div className="col-md-12">
                             <div className="section-title text-center">
-                                <h3 className="title">Related Products</h3>
+                                <h3 className="title">Супутні товари</h3>
                             </div>
                         </div>
 
@@ -46,15 +46,15 @@ const ProductMainSec2 = () => {
                                                 <FontAwesomeIcon icon={faHeart}
                                                                  className="fa fa-heart-o"
                                                                  style={{width: '15px'}}/><span
-                                                className="tooltipp">add to wishlist</span></button>
+                                                className="tooltipp">додати до списку бажань</span></button>
                                             <button className="add-to-compare"><FontAwesomeIcon icon={faExchange}
                                                                                                 className="fa fa-exchange"
                                                                                                 style={{width: '15px'}}/><span
-                                                className="tooltipp">add to compare</span></button>
+                                                className="tooltipp">додати для порівняння</span></button>
                                             <button className="quick-view"><FontAwesomeIcon icon={faEye}
                                                                                             className="fa fa-eye"
                                                                                             style={{width: '15px'}}/><span
-                                                className="tooltipp">quick view</span></button>
+                                                className="tooltipp">швидкий перегляд</span></button>
                                         </div>
                                     </div>
                                     <div className="add-to-cart add-to-cart__product__btn" style={{paddingTop: '38px'}}>
@@ -62,9 +62,7 @@ const ProductMainSec2 = () => {
                                             <FontAwesomeIcon
                                                 icon={faShoppingCart}
                                                 className="fa fa-shopping-cart"/> <NavLink to={'/'}
-                                                                                           className='add-to-cart-btn-link'> add
-                                            to
-                                            cart</NavLink>
+                                                                                           className='add-to-cart-btn-link'> додати в кошик</NavLink>
                                         </button>
                                     </div>
                                 </div>

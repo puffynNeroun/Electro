@@ -68,7 +68,7 @@ const ProductMainSec1 = () => {
                         {/* Product details */}
                         <div className="col-md-5">
                             <div className="product-details">
-                                <h2 className="product-name">product name goes here</h2>
+                                <h2 className="product-name">тут вказується назва продукту</h2>
                                 <div>
                                     <div className="product-rating">
                                         <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
@@ -77,12 +77,12 @@ const ProductMainSec1 = () => {
                                         <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
                                         <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
                                     </div>
-                                    <NavLink className="review-link" to="/">10 Review(s) | Add your review</NavLink>
+                                    <NavLink className="review-link" to="/">10 відгуків | Додайте свій відгук</NavLink>
                                 </div>
                                 <div>
                                     <h3 className="product-price">$980.00 <del
                                         className="product-old-price">$990.00</del></h3>
-                                    <span className="product-available">In Stock</span>
+                                    <span className="product-available">В наявності</span>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -90,45 +90,45 @@ const ProductMainSec1 = () => {
 
                                 <div className="product-options">
                                     <label>
-                                        Size
+                                        Розмір
                                         <select className="input-select">
                                             <option value="0">X</option>
                                         </select>
                                     </label>
                                     <label>
-                                        Color
+                                        Колір
                                         <select className="input-select">
-                                            <option value="0">Red</option>
+                                            <option value="0">Червоний</option>
                                         </select>
                                     </label>
                                 </div>
 
                                 <div className="add-to-cart add-to-cart__product">
                                     <div className="qty-label">
-                                        Qty
+                                        Rількість
                                         <div className="input-number">
                                             <input type="number"/>
                                             <span className="qty-up">+</span>
                                             <span className="qty-down">-</span>
                                         </div>
                                     </div>
-                                    <button className="add-to-cart-btn add-to-cart-btn__product"><FontAwesomeIcon icon={faShoppingCart}
-                                                                                         className="fa fa-shopping-cart"></FontAwesomeIcon> add
-                                        to cart
+                                    <button className="add-to-cart-btn add-to-cart-btn__product"><FontAwesomeIcon
+                                        icon={faShoppingCart}
+                                        className="fa fa-shopping-cart"></FontAwesomeIcon> додати в кошик
                                     </button>
                                 </div>
 
                                 <ul className="product-main-btns">
                                     <li><NavLink to="/"><FontAwesomeIcon icon={faHeart}
-                                                                     className="fa fa-heart-o"></FontAwesomeIcon> add to
-                                        wishlist</NavLink></li>
+                                                                         className="fa fa-heart-o"></FontAwesomeIcon>додати
+                                        до списку бажань</NavLink></li>
                                     <li><NavLink to="/"><FontAwesomeIcon icon={faExchange}
-                                                                     className="fa fa-exchange"></FontAwesomeIcon> add
-                                        to compare</NavLink></li>
+                                                                         className="fa fa-exchange"></FontAwesomeIcon>додати
+                                        для порівняння</NavLink></li>
                                 </ul>
 
                                 <ul className="product-links">
-                                    <li>Category:</li>
+                                    <li>Категорія:</li>
                                     <li><NavLink to="/">Headphones</NavLink></li>
                                     <li><NavLink to="/">Accessories</NavLink></li>
                                 </ul>
@@ -150,9 +150,9 @@ const ProductMainSec1 = () => {
                             <div id="product-tab">
                                 {/* product tab nav */}
                                 <ul className="tab-nav">
-                                    <li className="active"><NavLink data-toggle="tab" to="">Description</NavLink></li>
-                                    <li><NavLink data-toggle="tab" to="">Details</NavLink></li>
-                                    <li><NavLink data-toggle="tab" to="">Reviews (3)</NavLink></li>
+                                    <li className="active"><NavLink data-toggle="tab" to="">Опис</NavLink></li>
+                                    <li><NavLink data-toggle="tab" to="">Подробиці</NavLink></li>
+                                    <li><NavLink data-toggle="tab" to="">Відгуки (3)</NavLink></li>
                                 </ul>
                                 {/* /product tab nav */}
 
@@ -199,21 +199,31 @@ const ProductMainSec1 = () => {
                                                     <div className="rating-avg">
                                                         <span>4.5</span>
                                                         <div className="rating-stars">
-                                                            <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                            <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                            <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                            <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                            <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                            <FontAwesomeIcon icon={faStar}
+                                                                             className="fa fa-star"></FontAwesomeIcon>
+                                                            <FontAwesomeIcon icon={faStar}
+                                                                             className="fa fa-star"></FontAwesomeIcon>
+                                                            <FontAwesomeIcon icon={faStar}
+                                                                             className="fa fa-star"></FontAwesomeIcon>
+                                                            <FontAwesomeIcon icon={faStar}
+                                                                             className="fa fa-star"></FontAwesomeIcon>
+                                                            <FontAwesomeIcon icon={faStar}
+                                                                             className="fa fa-star"></FontAwesomeIcon>
                                                         </div>
                                                     </div>
                                                     <ul className="rating">
                                                         <li>
                                                             <div className="rating-stars">
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
                                                             </div>
                                                             <div className="rating-progress">
                                                                 <div style={{width: '80%'}}></div>
@@ -222,10 +232,14 @@ const ProductMainSec1 = () => {
                                                         </li>
                                                         <li>
                                                             <div className="rating-stars">
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
                                                             </div>
                                                             <div className="rating-progress">
                                                                 <div style={{width: '60%'}}></div>
@@ -234,9 +248,12 @@ const ProductMainSec1 = () => {
                                                         </li>
                                                         <li>
                                                             <div className="rating-stars">
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
                                                             </div>
                                                             <div className="rating-progress">
                                                                 <div></div>
@@ -245,8 +262,10 @@ const ProductMainSec1 = () => {
                                                         </li>
                                                         <li>
                                                             <div className="rating-stars">
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
                                                             </div>
                                                             <div className="rating-progress">
                                                                 <div></div>
@@ -255,7 +274,8 @@ const ProductMainSec1 = () => {
                                                         </li>
                                                         <li>
                                                             <div className="rating-stars">
-                                                                <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                <FontAwesomeIcon icon={faStar}
+                                                                                 className="fa fa-star"></FontAwesomeIcon>
                                                             </div>
                                                             <div className="rating-progress">
                                                                 <div></div>
@@ -273,56 +293,65 @@ const ProductMainSec1 = () => {
                                                     <ul className="reviews">
                                                         <li>
                                                             <div className="review-heading">
-                                                                <h5 className="name">John</h5>
-                                                                <p className="date">27 DEC 2018, 8:0 PM</p>
+                                                                <h5 className="name">Микола</h5>
+                                                                <p className="date">07.05.2023, 13:03 GMT+3</p>
                                                                 <div className="review-rating">
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
                                                                 </div>
                                                             </div>
                                                             <div className="review-body">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                                                    dolore magna aliqua</p>
+                                                                <p>Мені дуже сподобалося, відмінна якість</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div className="review-heading">
-                                                                <h5 className="name">John</h5>
-                                                                <p className="date">27 DEC 2018, 8:0 PM</p>
+                                                                <h5 className="name">Данило</h5>
+                                                                <p className="date">05.05.2023, 9:21 GMT+3</p>
                                                                 <div className="review-rating">
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
                                                                 </div>
                                                             </div>
                                                             <div className="review-body">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                                                    dolore magna aliqua</p>
+                                                                <p>Супер, я задоволений</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div className="review-heading">
-                                                                <h5 className="name">John</h5>
-                                                                <p className="date">27 DEC 2018, 8:0 PM</p>
+                                                                <h5 className="name">Іван</h5>
+                                                                <p className="date">06.04.2023, 16:43 GMT+3</p>
                                                                 <div className="review-rating">
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
-                                                                    <FontAwesomeIcon icon={faStar} className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
+                                                                    <FontAwesomeIcon icon={faStar}
+                                                                                     className="fa fa-star"></FontAwesomeIcon>
                                                                 </div>
                                                             </div>
                                                             <div className="review-body">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                                    elit, sed do eiusmod tempor incididunt ut labore et
-                                                                    dolore magna aliqua</p>
+                                                                <p>Все добре, але доставка прийшла невчасно</p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -331,7 +360,9 @@ const ProductMainSec1 = () => {
                                                         <li><NavLink to="">2</NavLink></li>
                                                         <li><NavLink to="">3</NavLink></li>
                                                         <li><NavLink to="">4</NavLink></li>
-                                                        <li><NavLink to=""><FontAwesomeIcon icon={faAnglesRight} className="fa fa-angle-right"></FontAwesomeIcon></NavLink></li>
+                                                        <li><NavLink to=""><FontAwesomeIcon icon={faAnglesRight}
+                                                                                            className="fa fa-angle-right"></FontAwesomeIcon></NavLink>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -346,7 +377,7 @@ const ProductMainSec1 = () => {
                                                         <textarea className="input"
                                                                   placeholder="Your Review"></textarea>
                                                         <div className="input-rating">
-                                                            <span>Your Rating: </span>
+                                                            <span>Ваш рейтинг: </span>
                                                             <div className="stars">
                                                                 <input id="star5" name="rating" value="5" type="radio"/><label
                                                                 htmlFor="star5"></label>
@@ -356,11 +387,12 @@ const ProductMainSec1 = () => {
                                                                 htmlFor="star3"></label>
                                                                 <input id="star2" name="rating" value="2" type="radio"/><label
                                                                 htmlFor="star2"></label>
-                                                                <input id="star1" name="rating"  value="1" type="radio"/><label
+                                                                <input id="star1" name="rating" value="1" type="radio"/><label
                                                                 htmlFor="star1"></label>
                                                             </div>
                                                         </div>
-                                                        <button className="primary-btn primary-btn__product">Submit</button>
+                                                        <button className="primary-btn primary-btn__product">Надіслати
+                                                        </button>
                                                     </form>
                                                 </div>
                                             </div>

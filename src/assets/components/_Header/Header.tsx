@@ -7,7 +7,7 @@ import {faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-regular-svg-icons'
 import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
 import logo from './../../img/logo.png'
-import Dropdown from "./__Dropdown/Dropdown.tsx";
+import Dropdown from "./__Cart/Cart.tsx";
 
 import './header.scss'
 import BurgerMenu from "./Menu/BurgerMenu";
@@ -19,53 +19,53 @@ const Header = () => {
 
     return (
         <header>
-            <div id="top-header">
-                <div className="container">
-                    <ul className="header-links pull-left">
-                        <li><a href="#"><FontAwesomeIcon className="fa fa-phone" icon={faPhone}/> +021-95-51-84</a></li>
+            <div id = "top-header">
+                <div className = "container">
+                    <ul className = "header-links pull-left">
+                        <li><a href="#"><FontAwesomeIcon className="fa fa-phone" icon={faPhone}/> +38066-666-66-66</a></li>
                         <li><a href="#"><FontAwesomeIcon className="fa fa-envelope-open-o"
                                                          icon={faEnvelopeOpen}/> email@email.com</a></li>
                         <li><a href="#"><FontAwesomeIcon className='fa fa-dollar' icon={faMapMarker}/> 1734 Stonecoal
                             Road</a>
                         </li>
                     </ul>
-                    <ul className="header-links pull-right">
-                        <li><a href="#"><FontAwesomeIcon className="fa fa-user-o" icon={faUser}/> My Account</a></li>
+                    <ul className = "header-links pull-right">
+                        <li><a href="#"><FontAwesomeIcon className="fa fa-user-o" icon={faUser}/> Мій аккаунт</a></li>
                     </ul>
                 </div>
             </div>
-            {/*TOP HEADER*/}
+            {/*{/TOP HEADER/}*/}
 
-            {/*MAIN HEADER */}
-            <div id="header">
-                {/*container*/}
-                <Container>
-                    {/* row */}
-                    <div className="row">
-                        {/* LOGO */}
-                        <div className="col-md-3 col-lg-3">
-                            <div className="header-logo">
-                                <NavLink to="/" className="logo">
-                                    <img src={logo} alt="logo"/>
-                                </NavLink>
-                            </div>
+            {/*/!*MAIN HEADER /}*/}
+        <div id = "header">
+            {/*{/container/}*/}
+            <Container>
+                {/*{/ ряд /}*/}
+                <div className = "row">
+                    {/*{/ ЛОГОТИП /}*/}
+                    <div className = "col-md-3 col-lg-3">
+                        <div className = "header-logo">
+                            <NavLink to = "/" className = "logo">
+                                <img src = {logo} alt = "логотип"/>
+                            </NavLink>
                         </div>
-                        {/* /LOGO */}
+                    </div>
+                    {/*{/ / ЛОГОТИП *!/*/}
 
                         {/* SEARCH BAR */}
-                        <div className="col-md-9 col-lg-6">
-                            <div className="header-search">
-                                <form>
-                                    <select className="input-select" style={{color: 'gray'}}>
-                                        <option value="0">All Categories</option>
-                                        <option value="1">Category 01</option>
-                                        <option value="1">Category 02</option>
-                                    </select>
-                                    <input className="input" placeholder="Search here"/>
-                                    <button className="search-btn">Search</button>
-                                </form>
-                            </div>
+                    <div className = "col-md-9 col-lg-6">
+                        <div className = "header-search">
+                            <form>
+                                <select className = "input-select" style = {{color: 'сірий'}}>
+                                    <option value = "0">Усі категорії</option>
+                                    <option value = "1">Категорія 01</option>
+                                    <option value = "1">Категорія 02</option>
+                                </select>
+                                <input className = "input" placeholder = "Шукайте тут"/>
+                                <button className = "search-btn">Пошук</button>
+                            </form>
                         </div>
+                    </div>
                         {/* /SEARCH BAR */}
 
                         {/* ACCOUNT */}
@@ -82,7 +82,7 @@ const Header = () => {
                                                           paddingTop: '5px'
                                                       }
                                                   }
-                                        >Your Wishlist</span>
+                                        >Список побажань</span>
                                         <div className="qty">2</div>
                                     </NavLink>
                                 </div>

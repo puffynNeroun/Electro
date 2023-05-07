@@ -5,17 +5,17 @@ import shop03 from './../../img/shop03.png'
 export const collectionItems = [
     {
         img: shop01,
-        title: 'Laptop Collection',
-        link: 'Shop now',
+        title: '"Колекція ноутбуків',
+        link: 'Купити зараз',
     },
     {
         img: shop02,
-        title: 'Laptop Collection',
-        link: 'Shop now',
+        title: 'Колекція ноутбуків',
+        link: 'Купити зараз',
     },
     {
         img: shop03,
-        title: 'Laptop Collection',
-        link: 'Shop now',
+        title: 'Колекція ноутбуків',
+        link: 'Купити зараз',
     },
 ]

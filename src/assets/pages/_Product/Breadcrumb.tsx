@@ -12,11 +12,8 @@ const Breadcrumb = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <ul className="breadcrumb-tree">
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li><NavLink to="">All Categories</NavLink></li>
-                                <li><NavLink to="">Accessories</NavLink></li>
-                                <li><NavLink to="/">Headphones</NavLink></li>
-                                <li className="active">Product name goes here</li>
+                                <li><NavLink to="/">Головна</NavLink></li>
+                                <li><NavLink to="">Всі категорії</NavLink></li>
                             </ul>
                         </div>
                     </div>

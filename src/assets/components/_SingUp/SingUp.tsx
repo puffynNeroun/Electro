@@ -34,16 +34,16 @@ const SingUp = () => {
 
                     <div className="col-md-12">
                         <div className="newsletter">
-                            <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+                            <p>Підпишіться на <strong>БЮЛЕТЕНЬ</strong></p>
                             <form className="form-aw" onSubmit={handleSubmit}>
                                 <FontAwesomeIcon icon={faEnvelope} className="form-img"/>
                                 <input className="input" value={email} onChange={handleChange} type="email" placeholder="Enter Your Email" pattern="[0-16]+"/>
                                 {email && (
                                     <div style={{ marginTop: '10px' }}>
                                         {isValid ? (
-                                            <p className="isValide">Email is valid</p>
+                                            <p className="isValide">Електронна адреса дійсна</p>
                                         ) : (
-                                            <p className="isValide">Email is invalid or too long (max 20 characters)</p>
+                                            <p className="isValide">Електронна адреса недійсна або задовга (максимум 20 символів)</p>
                                         )}
                                     </div>
                                 )}
@@ -51,7 +51,7 @@ const SingUp = () => {
 
 
                                         <FontAwesomeIcon icon={faEnvelope} className="fa fa-envelope" style={{paddingRight: '10px'}}></FontAwesomeIcon>
-                                        Subscribe
+                                        Підпишіться
                                     </button>
                             </form>
                             <ul className="newsletter-follow">
