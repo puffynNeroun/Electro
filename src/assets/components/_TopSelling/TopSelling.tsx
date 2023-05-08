@@ -11,8 +11,12 @@ import "../../../assets/styles/index.css";
 import "./_Slider/simpleSlider.scss";
 import { topSellingItems } from "./_Slider/simpleSlider.data";
 import { NavLink } from "react-router-dom";
+import { StoreContext } from "../../../context";
+import { useContext } from "react";
 
 function NewProduct() {
+  const { cart } = useContext(StoreContext)
+
   const settings = {
     dots: true,
     infinite: true,
@@ -113,6 +117,12 @@ function NewProduct() {
                 <button
                   className="add-to-cart-btn"
                   style={{ fontSize: "inherit" }}
+                  onClick={_ => cart.add({
+                      id: topSellingItem.id,
+                      name: topSellingItem.names,
+                      image: topSellingItem.img,
+                      price: topSellingItem.price,
+                  })}
                 >
                   <FontAwesomeIcon
                     icon={faShoppingCart}
