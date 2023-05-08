@@ -37,6 +37,8 @@ export class CartStore {
       this.items = [...this.items, { ...item, count: 1 }]
     }
 
+    this.saveToLocalstorage()
+
     // возвращаем this чтобы можно было писать cart.add({}).add({}).add({})
     return this
   }
@@ -46,12 +48,19 @@ export class CartStore {
     this.items = this.items
       .map(x => x.id == id ? { ...x, count: x.count - 1 } : x)
       .filter(x => x.count > 0)
+    this.saveToLocalstorage()
     return this
   }
 
   // очистить корзину
   clear(): this {
     this.items = []
+    this.saveToLocalstorage()
     return this
+  }
+
+  // сохранить состояние в localStorage
+  private saveToLocalstorage() {
+    localStorage.setItem("cart_items", JSON.stringify(this.items))
   }
 }
