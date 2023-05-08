@@ -1,23 +1,13 @@
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faExchange } from "@fortawesome/free-solid-svg-icons";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 import "../../../assets/styles/index.css";
 import "./_Slider/simpleSlider.scss";
 import { topSellingItems } from "./_Slider/simpleSlider.data";
 import { NavLink } from "react-router-dom";
-import { StoreContext } from "../../../context";
-import { useContext } from "react";
 import Product from "../_Product";
 
 function NewProduct() {
-    const { cart } = useContext(StoreContext);
-
     const settings = {
         dots: true,
         infinite: true,
