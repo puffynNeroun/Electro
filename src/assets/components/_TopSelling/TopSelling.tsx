@@ -59,9 +59,9 @@ function NewProduct() {
                   <NavLink to="/product">{topSellingItem.names}</NavLink>
                 </h3>
                 <h4 className="product-price">
-                  {topSellingItem.price}
+                  ${(topSellingItem.price / 100).toFixed(2)}
                   <del className="product-old-price">
-                    {topSellingItem.oldprice}
+                    ${(topSellingItem.oldprice / 100).toFixed(2)}
                   </del>
                 </h4>
                 <div className="product-rating">
