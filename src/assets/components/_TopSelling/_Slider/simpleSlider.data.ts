@@ -57,7 +57,7 @@ export const topSellingItems = [
         id: '118e10ec-0000-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
-        names: 'тут вказується назва продукту',
+        names: 'Тестова Назва Продукту',
         price: '$980.00',
         oldprice: '$1990.00',
         key: 0,
