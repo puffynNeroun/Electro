@@ -6,6 +6,8 @@ export type Product = {
   name: string,
   image: string,
   price: number,
+  oldprice: number,
+  category: string,
 }
 
 // вещь которую уже положили в корзину
