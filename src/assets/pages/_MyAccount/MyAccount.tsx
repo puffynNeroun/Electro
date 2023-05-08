@@ -12,7 +12,9 @@ const MyAccount = () => {
                 <Row>
                     <Col lg={5} >
                         <div className='myAccount'>
-                            <div className="myAccount__title">Мій аккаунт</div>
+                            <div className="myAccount__title">
+                                <div className="myAccount__title__data">Мій аккаунт</div>
+                            </div>
                             <div className="myAccount__info">
                                 <div className="myAccount__info__name">
                                     <div className="myAccount__info__name__sign">Ім'я:</div>

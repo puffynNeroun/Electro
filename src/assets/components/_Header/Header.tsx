@@ -73,7 +73,7 @@ const Header = () => {
                             <div className="header-ctn">
                                 {/* Wishlist */}
                                 <div>
-                                    <NavLink to="/">
+                                    <NavLink to="/wishlist">
                                         <FontAwesomeIcon className="fa fa-heart" icon={faHeart}/>
                                         <span style=
                                                   {

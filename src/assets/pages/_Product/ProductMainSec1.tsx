@@ -12,6 +12,7 @@ import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {faExchange} from "@fortawesome/free-solid-svg-icons";
 import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
+import 'bootstrap/dist/js/bootstrap.min.js'
 
 const ProductMainSec1 = () => {
     return (
