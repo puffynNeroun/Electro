@@ -1,5 +1,5 @@
 import { CartStore } from "./CartStore";
 
 export default {
-  cart: CartStore,
+  cart: new CartStore(),
 }
