@@ -34,7 +34,12 @@ function Cart() {
                                     <h3 className="product-name"><a href={`#${item.id}`}>{item.name}</a></h3>
                                     <h4 className="product-price"><span className="qty">{item.count}x</span>${(item.price / 100).toFixed(2)}</h4>
                                 </div>
-                                <button className="delete"><FontAwesomeIcon icon={faClose} className="fa fa-close" /></button>
+                                <button
+                                    className="delete"
+                                    onClick={_ => cart.delete(item.id)}
+                                >
+                                    <FontAwesomeIcon icon={faClose} className="fa fa-close" />
+                                </button>
                             </div>
                         ))}
                     </div>
