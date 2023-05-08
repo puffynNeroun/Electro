@@ -437,7 +437,7 @@ textarea.input {
 
 @media (max-width: 576px) {
   .header-links li {
-    font-size: 11px;
+    font-size: 9px;
   }
 }
 
@@ -1363,7 +1363,8 @@ textarea.input {
 /*-- Store Sort --*/
 
 .store-sort {
-  display: inline-block;
+  display: flex;
+  gap: 10px;
 }
 
 .store-sort label {

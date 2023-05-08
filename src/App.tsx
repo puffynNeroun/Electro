@@ -8,6 +8,7 @@ import Blank from "./assets/pages/_Blank/Blank";
 import Product from "./assets/pages/_Product/Product";
 import Store from "./assets/pages/_Store/Store";
 import MyAccount from "./assets/pages/_MyAccount/MyAccount";
+import Wishlist from "./assets/pages/_Wishlist/Wishlist";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                 <Route path="/product" element={<Product/>}/>
                 <Route path='/store' element={<Store/>}/>
                 <Route path='/myAccount' element={<MyAccount/>}/>
+                <Route path='/wishlist' element={<Wishlist/>}/>
             </Routes>
             <Footer/>
         </>

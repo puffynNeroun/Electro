@@ -6,6 +6,7 @@ import {faExchange, faEye, faHeart, faShoppingCart, faStar, faTh, faAnglesRight}
 import {NavLink} from "react-router-dom";
 import {storeProducts, storeAsides} from "./store.data";
 import SingUp from "../../components/_SingUp/SingUp";
+import PriceRangeSlider from "./PriseRangeSlider";
 
 
 const Store = () => {
@@ -105,20 +106,7 @@ const Store = () => {
                             {/* aside Widget */}
                             <div className="aside">
                                 <h3 className="aside-title">Ціна</h3>
-                                <div className="price-filter">
-                                    <div id="price-slider"></div>
-                                    <div className="input-number price-min">
-                                        <input id="price-min" type="number"/>
-                                        <span className="qty-up">+</span>
-                                        <span className="qty-down">-</span>
-                                    </div>
-                                    <span>-</span>
-                                    <div className="input-number price-max">
-                                        <input id="price-max" type="number"/>
-                                        <span className="qty-up">+</span>
-                                        <span className="qty-down">-</span>
-                                    </div>
-                                </div>
+                               <PriceRangeSlider/>
                             </div>
                             {/* /aside Widget */}
 
