@@ -27,7 +27,7 @@ function Cart() {
                     {/* Список корзины */}
                     <div className="cart-list">
                         {cart.items.map(item => (
-                            <div className="product-widget">
+                            <div className="product-widget" key={item.id}>
                                 <div className="product-img">
                                     <img src={item.image} alt="" />
                                 </div>
