@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faClose, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import { StoreContext } from '../../../../context';
+import { observer } from 'mobx-react-lite';
 
 function Cart() {
     const { cart } = useContext(StoreContext);
@@ -60,4 +61,4 @@ function Cart() {
     );
 }
 
-export default Cart;
+export default observer(Cart);
