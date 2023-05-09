@@ -1,17 +1,17 @@
 import Collection from "../../components/_Collection/Collection";
-import NewProduct from "../../components/_NewProduct/_Slider/NewProductSlider";
 import Stocks from "../../components/_Stocks/Stocks";
-import TopSelling from "../../components/_TopSelling/TopSelling";
 import ProductWidget from "../../components/_ProductWidget/ProductWidget";
 import SingUp from "../../components/_SingUp/SingUp";
+import SliderOne from "../../components/_TopSelling/_Slider/SliderOne";
+import SliderTwo from "../../components/_TopSelling/_Slider/SliderTwo";
 
 const Index = () => {
     return (
         <div>
             <Collection/>
-            <NewProduct/>
+            <SliderTwo/>
             <Stocks/>
-            <TopSelling/>
+            <SliderOne/>
             <ProductWidget />
             <SingUp/>
         </div>

@@ -954,6 +954,7 @@ textarea.input {
 .product .product-body .product-name {
   text-transform: uppercase;
   font-size: 14px;
+  height: 33px;
 }
 
 @media (max-width: 576px) {
@@ -1140,6 +1141,8 @@ textarea.input {
 
 .add-to-cart-btn-link {
   font-size: 13px;
+  color: white;
+  font-weight: 700;
 }
 
 /*----------------------------*\
@@ -1268,6 +1271,13 @@ textarea.input {
 
 .products-slick-nav .slick-prev:before, .products-slick-nav .slick-next:before {
   font-size: 14px;
+}
+
+@media (max-width: 568px) {
+  .slick-track {
+    display: flex;
+    gap: 100px;
+  }
 }
 
 /*=========================================================

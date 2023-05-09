@@ -7,15 +7,18 @@ export const collectionItems = [
         img: shop01,
         title: '"Колекція ноутбуків',
         link: 'Купити зараз',
+        key: 0,
     },
     {
         img: shop02,
         title: 'Колекція ноутбуків',
         link: 'Купити зараз',
+        key: 1,
     },
     {
         img: shop03,
         title: 'Колекція ноутбуків',
         link: 'Купити зараз',
+        key: 2,
     },
 ]

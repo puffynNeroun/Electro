@@ -13,7 +13,7 @@ const Collection = () => {
                 <div className="row">
                     {/* shop */}
                     {collectionItems.map((collectionItem) =>
-                        <div className="col-md-4 col-xs-6">
+                        <div key={collectionItem.key} className="col-md-4 col-xs-6" >
                             <div className="shop">
                                 <div className="shop-img">
                                     <img src={collectionItem.img} alt="shop01"/>

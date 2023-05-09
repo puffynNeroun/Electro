@@ -53,6 +53,7 @@ export const sliderItems = [
 ]
 
 export const topSellingItems = [
+
     {
         id: '118e10ec-0000-44ec-be96-04035d5dac14',
         img: product2,
@@ -62,6 +63,7 @@ export const topSellingItems = [
         oldprice: 199000,
         key: 0,
     },
+
     {
         id: '118e10ec-0001-44ec-be96-04035d5dac14',
         img: product2,
@@ -71,6 +73,7 @@ export const topSellingItems = [
         oldprice: 199000,
         key: 1,
     },
+
     {
         id: '118e10ec-0002-44ec-be96-04035d5dac14',
         img: product2,
@@ -80,6 +83,7 @@ export const topSellingItems = [
         oldprice: 199000,
         key: 2,
     },
+
     {
         id: '118e10ec-0003-44ec-be96-04035d5dac14',
         img: product2,
@@ -89,6 +93,7 @@ export const topSellingItems = [
         oldprice: 199000,
         key: 3,
     },
+
     {
         id: '118e10ec-0004-44ec-be96-04035d5dac14',
         img: product2,
@@ -98,6 +103,7 @@ export const topSellingItems = [
         oldprice: 199000,
         key: 4,
     },
+
     {
         id: '118e10ec-0005-44ec-be96-04035d5dac14',
         img: product2,

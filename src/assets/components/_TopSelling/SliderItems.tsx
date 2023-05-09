@@ -7,7 +7,7 @@ import { topSellingItems } from "./_Slider/simpleSlider.data";
 import { NavLink } from "react-router-dom";
 import Product from "../_Product";
 
-function NewProduct() {
+function NewProduct({name}) {
     const settings = {
         dots: true,
         infinite: true,
@@ -21,7 +21,7 @@ function NewProduct() {
         <div style={{ marginTop: "40px" }}>
             <Container>
                 <div className="section-title-nav">
-                    <h2 className="product-title"> ТОП ПРОДАЖІВ</h2>
+                    <h2 className="product-title"> {name}</h2>
                     <div className="section-nav">
                         <ul className="section-tab-nav tab-nav">
                             <li className="active">
@@ -41,7 +41,7 @@ function NewProduct() {
                             price: topSellingItem.price,
                             oldprice: topSellingItem.oldprice,
                             category: topSellingItem.category,
-                        }} />
+                        }} key={topSellingItem.key}/>
                     ))}
                 </Slider>
             </Container>
