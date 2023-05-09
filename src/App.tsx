@@ -9,9 +9,16 @@ import Product from "./assets/pages/_Product/Product";
 import Store from "./assets/pages/_Store/Store";
 import MyAccount from "./assets/pages/_MyAccount/MyAccount";
 import Wishlist from "./assets/pages/_Wishlist/Wishlist";
+import { useContext, useEffect } from "react";
+import { StoreContext } from "./context.tsx";
 
 
 const App = () => {
+    const { cart } = useContext(StoreContext)
+
+    useEffect(() => {
+        cart.items = JSON.parse(localStorage.getItem("cart_items") ?? '[]')
+    }, [])
 
     return (
         <>
