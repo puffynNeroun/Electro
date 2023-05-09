@@ -22,8 +22,7 @@ const Store = () => {
                             <ul className="breadcrumb-tree">
                                 <li><NavLink to="/">Головна</NavLink></li>
                                 <li><NavLink to="">Всі категорії</NavLink></li>
-                                <li><NavLink to="">Accessories</NavLink></li>
-                                <li className="active">Холодильники (227 490 результатів)</li>
+                                <li><NavLink to="">Магазин</NavLink></li>
                             </ul>
                         </div>
                     </div>

@@ -51,6 +51,10 @@ function PriceRangeSlider() {
                 value={maxPrice}
                 onChange={handleMaxPriceChange}
             />
+
+            <button className='price-range-button'>
+                Застосувати
+            </button>
         </div>
     );
 }
