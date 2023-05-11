@@ -2,12 +2,14 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import '../../styles/index.css'
 import './store.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faExchange, faEye, faHeart, faShoppingCart, faStar, faTh, faAnglesRight} from "@fortawesome/free-solid-svg-icons";
+import {faTh, faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
 import {storeProducts, storeAsides} from "./store.data";
 import SingUp from "../../components/_SingUp/SingUp";
 import PriceRangeSlider from "./PriseRangeSlider";
 
+import "../../../assets/styles/index.css";
+import Product from "../../components/_Product";
 
 const Store = () => {
     return (
@@ -105,7 +107,7 @@ const Store = () => {
                             {/* aside Widget */}
                             <div className="aside">
                                 <h3 className="aside-title">Ціна</h3>
-                               <PriceRangeSlider/>
+                                <PriceRangeSlider/>
                             </div>
                             {/* /aside Widget */}
 
@@ -173,7 +175,7 @@ const Store = () => {
                                         <div className="product-img">
                                             <img src={storeAside.img} alt=""/>
                                         </div>
-                                        <div className="product-body">
+                                        <div className="product-body" style={{paddingLeft: '60px'}}>
                                             <p className="product-category">{storeAside.category}</p>
                                             <h3 className="product-name"><NavLink
                                                 to="/product">{storeAside.names}</NavLink></h3>
@@ -218,62 +220,20 @@ const Store = () => {
                             {/* /store top filter */}
 
                             {/* store products */}
-                            <div className="row">
+                            <div className="row" style={{justifyContent: 'space-around'}}>
                                 {/* product */}
-                                {storeProducts.map((storeProduct) =>
-                                    <div key={storeProduct.key} className="col-md-4 col-xs-6">
-                                        <div className="product product-store">
-                                            <div className="product-img">
-                                                <img src={storeProduct.img} alt=""/>
-                                            </div>
-                                            <div className="product-body">
-                                                <p className="product-category">{storeProduct.category}</p>
-                                                <h3 className="product-name"><NavLink to="/product">{storeProduct.names}</NavLink></h3>
-                                                <h4 className="product-price">{storeProduct.price}
-                                                    <del
-                                                        className="product-old-price">{storeProduct.oldprice}</del>
-                                                </h4>
-                                                <div className="product-rating">
-                                                    <FontAwesomeIcon icon={faStar}
-                                                                     className="fa fa-star"></FontAwesomeIcon>
-                                                    <FontAwesomeIcon icon={faStar}
-                                                                     className="fa fa-star"></FontAwesomeIcon>
-                                                    <FontAwesomeIcon icon={faStar}
-                                                                     className="fa fa-star"></FontAwesomeIcon>
-                                                    <FontAwesomeIcon icon={faStar}
-                                                                     className="fa fa-star"></FontAwesomeIcon>
-                                                    <FontAwesomeIcon icon={faStar}
-                                                                     className="fa fa-star"></FontAwesomeIcon>
-                                                </div>
-                                                <div className="product-btns">
-                                                    <button className="add-to-wishlist" style={{right: 0}}>
-                                                        <FontAwesomeIcon icon={faHeart}
-                                                                         className="fa fa-heart-o"
-                                                                         style={{width: '15px'}}/><span
-                                                        className="tooltipp">додати до списку бажань</span></button>
-                                                    <button className="add-to-compare"><FontAwesomeIcon
-                                                        icon={faExchange}
-                                                        className="fa fa-exchange"
-                                                        style={{width: '15px'}}/><span
-                                                        className="tooltipp">додати для порівняння</span></button>
-                                                    <button className="quick-view"><FontAwesomeIcon icon={faEye}
-                                                                                                    className="fa fa-eye"
-                                                                                                    style={{width: '15px'}}/><span
-                                                        className="tooltipp">швидкий перегляд</span></button>
-                                                </div>
-                                            </div>
-                                            <div className="add-to-cart add-to-cart__product__btn"
-                                                 style={{paddingTop: '38px'}}>
-                                                <button className="add-to-cart-btn" style={{fontSize: "inherit"}}>
-                                                    <FontAwesomeIcon
-                                                        icon={faShoppingCart}
-                                                        className="fa fa-shopping-cart"/> <NavLink to={'/'}
-                                                                                                   className='add-to-cart-btn-link'> додати в кошик</NavLink>
-                                                </button>
-                                            </div>
-                                        </div>
+                                {storeProducts.map((storeProduct) => (
+                                    <div className='col-md-4 col-xs-12' style={{display: 'contents'}}>
+                                        <Product product={{
+                                            id: storeProduct.id,
+                                            name: storeProduct.names,
+                                            image: storeProduct.img,
+                                            price: storeProduct.price,
+                                            oldprice: storeProduct.oldprice,
+                                            category: storeProduct.category,
+                                        }} key={storeProduct.key}/>
                                     </div>
-                                )}
+                                ))}
                             </div>
                             {/* /store products */}
 
@@ -284,7 +244,9 @@ const Store = () => {
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
-                                    <li><a href="#"><FontAwesomeIcon icon={faAnglesRight} className="fa fa-angle-right"></FontAwesomeIcon></a></li>
+                                    <li><a href="#"><FontAwesomeIcon icon={faAnglesRight}
+                                                                     className="fa fa-angle-right"></FontAwesomeIcon></a>
+                                    </li>
                                 </ul>
                             </div>
                             {/* /store bottom filter */}

@@ -3,51 +3,57 @@ import product2 from './../../../img/product02.png';
 
 export const sliderItems = [
     {
+        id: '118e10ec-0000-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
-        price: '$980.00',
-        oldprice: '$990.00',
+        price: 100,
+        oldprice: 150,
         key: 0,
     },
     {
+        id: '118e10ec-0001-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
-        price: '$980.00',
-        oldprice: '$990.00',
+        price: 100,
+        oldprice: 150,
         key: 1,
     },
     {
+        id: '118e10ec-0002-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
-        price: '$980.00',
-        oldprice: '$990.00',
+        price: 100,
+        oldprice: 150,
         key: 2,
     },
     {
+        id: '118e10ec-0003-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
-        price: '$980.00',
-        oldprice: '$990.00',
+        price: 100,
+        oldprice: 150,
         key: 3,
     },
     {
+        id: '118e10ec-0004-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
-        price: '$980.00',
-        oldprice: '$990.00',
+        price: 100,
+        oldprice: 150,
         key: 4,
     },
     {
+        id: '118e10ec-0005-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
-        price: '$980.00',
-        oldprice: '$990.00',
+        price: 100,
+        oldprice: 150,
         key: 5,
     },
 ]
@@ -55,7 +61,7 @@ export const sliderItems = [
 export const topSellingItems = [
 
     {
-        id: '118e10ec-0000-44ec-be96-04035d5dac14',
+        id: '118e10ec-0006-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'Тестова Назва Продукту',
@@ -65,7 +71,7 @@ export const topSellingItems = [
     },
 
     {
-        id: '118e10ec-0001-44ec-be96-04035d5dac14',
+        id: '118e10ec-0007-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
@@ -75,7 +81,7 @@ export const topSellingItems = [
     },
 
     {
-        id: '118e10ec-0002-44ec-be96-04035d5dac14',
+        id: '118e10ec-0008-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
@@ -85,7 +91,7 @@ export const topSellingItems = [
     },
 
     {
-        id: '118e10ec-0003-44ec-be96-04035d5dac14',
+        id: '118e10ec-0009-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
@@ -95,7 +101,7 @@ export const topSellingItems = [
     },
 
     {
-        id: '118e10ec-0004-44ec-be96-04035d5dac14',
+        id: '118e10ec-0010-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',
@@ -105,7 +111,7 @@ export const topSellingItems = [
     },
 
     {
-        id: '118e10ec-0005-44ec-be96-04035d5dac14',
+        id: '118e10ec-0011-44ec-be96-04035d5dac14',
         img: product2,
         category: 'Категорія',
         names: 'тут вказується назва продукту',

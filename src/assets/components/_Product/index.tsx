@@ -94,7 +94,7 @@ function ProductComponent({ product }: { product: Product }) {
                         icon={faShoppingCart}
                         className="fa fa-shopping-cart"
                     />
-                    <NavLink to={"/"} className="add-to-cart-btn-link">
+                    <NavLink to={""} className="add-to-cart-btn-link">
                         {" "}
                         додати в кошик
                     </NavLink>

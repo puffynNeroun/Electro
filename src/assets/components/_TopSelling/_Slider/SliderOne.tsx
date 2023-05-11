@@ -1,10 +1,10 @@
-import SliderItems from "../SliderItems";
+import SliderItems2 from "../SliderItems2";
 
 
 const SliderOne = () => {
     return (
         <>
-            <SliderItems name="Топ продаж" />
+            <SliderItems2 name="ТОП ПРОДАЖУ" />
         </>
     );
 };

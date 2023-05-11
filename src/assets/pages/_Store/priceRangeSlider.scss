@@ -1,4 +1,8 @@
 .price-range-slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+
   &__min-price {
     font-size: 13px;
     color: #8D99AE;
@@ -14,12 +18,13 @@
   border-radius: 5px;
   border: 1px solid #ececea;
   margin-bottom: 10px;
+  width: 150px;
 }
 
 .price-range-button {
   position: relative;
   padding: 5px 20px;
-  margin-top: 25px ;
+  margin-top: 25px;
   font-size: 15px;
   background: #3991ec;
   border-radius: 10px;

@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 import "../../../assets/styles/index.css";
 import "./_Slider/simpleSlider.scss";
-import {sliderItems} from "./_Slider/simpleSlider.data";
+import { topSellingItems } from "./_Slider/simpleSlider.data";
 import { NavLink } from "react-router-dom";
 import Product from "../_Product";
 
@@ -33,15 +33,15 @@ function NewProduct({name}) {
                     </div>
                 </div>
                 <Slider {...settings}>
-                    {sliderItems.map((sliderItem) => (
+                    {topSellingItems.map((topSellingItem) => (
                         <Product product={{
-                            id: sliderItem.id,
-                            name: sliderItem.names,
-                            image: sliderItem.img,
-                            price: sliderItem.price,
-                            oldprice: sliderItem.oldprice,
-                            category: sliderItem.category,
-                        }} key={sliderItem.key}/>
+                            id: topSellingItem.id,
+                            name: topSellingItem.names,
+                            image: topSellingItem.img,
+                            price: topSellingItem.price,
+                            oldprice: topSellingItem.oldprice,
+                            category: topSellingItem.category,
+                        }} key={topSellingItem.key}/>
                     ))}
                 </Slider>
             </Container>
