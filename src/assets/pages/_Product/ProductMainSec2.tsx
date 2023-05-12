@@ -3,8 +3,7 @@ import '../../styles/index.css'
 import './productMain.scss'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faExchange, faEye, faHeart, faShoppingCart, faStar} from "@fortawesome/free-solid-svg-icons";
-import {NavLink} from "react-router-dom";
+import {faExchange, faEye, faHeart, faStar} from "@fortawesome/free-solid-svg-icons";
 import {products} from "./productMainSec2.data";
 
 const ProductMainSec2 = () => {

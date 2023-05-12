@@ -1,19 +1,15 @@
-import product01 from './img/product01.png'
-import product03 from './img/product03.png'
-import product06 from './img/product06.png'
-import product08 from './img/product08.png'
+import {useState, useEffect} from "react";
+import {faStar, faHeart, faShoppingCart, faExchange, faAnglesRight} from "@fortawesome/free-solid-svg-icons";
+import {NavLink} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import '../../styles/index.css'
 import './productMain.scss'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
-import {faHeart} from "@fortawesome/free-solid-svg-icons";
-import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
-import {faExchange} from "@fortawesome/free-solid-svg-icons";
-import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
-import {NavLink} from "react-router-dom";
-import {useState, useEffect} from "react";
+import product01 from './img/product01.png'
+import product03 from './img/product03.png'
+import product06 from './img/product06.png'
+import product08 from './img/product08.png'
 
 const ProductMainSec1 = ({screenWidth}) => {
     const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,15 +1,15 @@
-import 'bootstrap/dist/css/bootstrap-grid.min.css'
-import '../../styles/index.css'
-import './store.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTh, faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
 import {storeProducts, storeAsides} from "./store.data";
 import SingUp from "../../components/_SingUp/SingUp";
 import PriceRangeSlider from "./PriseRangeSlider";
-
-import "../../../assets/styles/index.css";
 import Product from "../../components/_Product";
+
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import '../../styles/index.css'
+import './store.scss'
+import "../../../assets/styles/index.css";
 
 const Store = () => {
     return (
