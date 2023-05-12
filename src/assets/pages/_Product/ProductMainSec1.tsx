@@ -11,7 +11,7 @@ import product03 from './img/product03.png'
 import product06 from './img/product06.png'
 import product08 from './img/product08.png'
 
-const ProductMainSec1 = ({screenWidth}) => {
+const ProductMainSec1 = ({screenWidth}: { screenWidth: number   }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [imageWidth, setImageWidth] = useState(200);
     const images = [
