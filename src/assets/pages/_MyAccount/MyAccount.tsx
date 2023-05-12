@@ -1,8 +1,9 @@
 import SingUp from "../../components/_SingUp/SingUp";
 import {Col, Container, Row} from "react-bootstrap";
+import {myAccountItems} from "./myAccount.data";
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import './myAccount.scss'
-import {myAccountItems} from "./myAccount.data";
+
 
 
 const MyAccount = () => {
