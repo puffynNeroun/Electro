@@ -20,6 +20,7 @@ function Cart() {
                 <a className="dropdown-toggle" aria-expanded="true">
                     <FontAwesomeIcon className="fa fa-shopping-cart" icon={faShoppingCart} />
                 </a>
+                <span style={{fontSize: '12px', paddingTop: '5px', color: '#fff'}}>Кошик</span>
             </div>
 
             {isOpen && (

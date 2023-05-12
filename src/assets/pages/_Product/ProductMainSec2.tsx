@@ -57,14 +57,6 @@ const ProductMainSec2 = () => {
                                                 className="tooltipp">швидкий перегляд</span></button>
                                         </div>
                                     </div>
-                                    <div className="add-to-cart add-to-cart__product__btn" style={{paddingTop: '38px'}}>
-                                        <button className="add-to-cart-btn" style={{fontSize: "inherit"}}>
-                                            <FontAwesomeIcon
-                                                icon={faShoppingCart}
-                                                className="fa fa-shopping-cart"/> <NavLink to={'/'}
-                                                                                           className='add-to-cart-btn-link'> додати в кошик</NavLink>
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         )}

@@ -85,7 +85,7 @@ const Header = () => {
                                                       }
                                                   }
                                         >Список побажань</span>
-                                        <div className="qty">2</div>
+
                                     </NavLink>
                                 </div>
                                 {/* /Wishlist */}
