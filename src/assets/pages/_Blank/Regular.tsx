@@ -1,6 +1,6 @@
+import {NavLink} from "react-router-dom";
 import '../../styles/index.css'
 import './regular.scss'
-import {NavLink} from "react-router-dom";
 
 const Regular = () => {
     return (

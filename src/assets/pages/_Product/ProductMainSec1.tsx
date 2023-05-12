@@ -162,13 +162,7 @@ const ProductMainSec1 = ({screenWidth}) => {
                                     <li><NavLink to="/">Accessories</NavLink></li>
                                 </ul>
 
-                                <ul className="product-links">
-                                    <li>Share:</li>
-                                    <li><NavLink to="/"><i className="fa fa-facebook"></i></NavLink></li>
-                                    <li><NavLink to="/"><i className="fa fa-twitter"></i></NavLink></li>
-                                    <li><NavLink to="/"><i className="fa fa-google-plus"></i></NavLink></li>
-                                    <li><NavLink to="/"><i className="fa fa-envelope"></i></NavLink></li>
-                                </ul>
+
 
                             </div>
                         </div>
