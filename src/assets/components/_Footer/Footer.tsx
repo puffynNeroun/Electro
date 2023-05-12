@@ -1,8 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
-import {faPhone} from "@fortawesome/free-solid-svg-icons";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
+import {faMapMarker, faPhone, faEnvelope, faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
 
 
