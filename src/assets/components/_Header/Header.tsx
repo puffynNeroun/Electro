@@ -1,11 +1,7 @@
 import {Container} from "react-bootstrap";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPhone} from '@fortawesome/free-solid-svg-icons';
-import {faHeart} from '@fortawesome/free-solid-svg-icons';
-import {faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons';
-import {faUser} from '@fortawesome/free-regular-svg-icons'
-import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
+import {faPhone, faHeart, faEnvelopeOpen, faUser, faMapMarker} from '@fortawesome/free-solid-svg-icons';
 import logo from './../../img/logo.png'
 import Dropdown from "./__Cart/Cart.tsx";
 
