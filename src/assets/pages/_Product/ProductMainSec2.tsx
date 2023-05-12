@@ -30,7 +30,7 @@ const ProductMainSec2 = () => {
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">{product.category}</p>
-                                        <h3 className="product-name"><a href="#">{product.names}</a></h3>
+                                        <h3 className="product-name"><a style={{fontSize: '13px'}} href="#">{product.names}</a></h3>
                                         <h4 className="product-price">{product.price}<del
                                             className="product-old-price">{product.oldprice}</del></h4>
                                         <div className="product-rating">
