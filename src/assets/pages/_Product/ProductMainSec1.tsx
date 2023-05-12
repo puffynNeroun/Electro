@@ -13,8 +13,36 @@ import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {faExchange} from "@fortawesome/free-solid-svg-icons";
 import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from "react-router-dom";
+import {useState, useEffect} from "react";
 
-const ProductMainSec1 = () => {
+const ProductMainSec1 = ({screenWidth}) => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [imageWidth, setImageWidth] = useState(200);
+    const images = [
+        product01,
+        product03,
+        product06,
+        product08
+    ];
+    const [activeButton, setActiveButton] = useState(0);
+
+    const handleClick = (index) => {
+        setActiveButton(index);
+    };
+
+    const handleSlideClick = (index) => {
+        setCurrentSlide(index);
+    };
+
+    useEffect(() => {
+        if (screenWidth < 768) {
+            setImageWidth(screenWidth * 0.8);
+        } else if (screenWidth < 992) {
+            setImageWidth(screenWidth * 0.5);
+        } else {
+            setImageWidth(200);
+        }
+    }, [screenWidth]);
     return (
         <div>
             <div className="section">
@@ -23,51 +51,49 @@ const ProductMainSec1 = () => {
                     {/* row */}
                     <div className="row">
                         {/* Product main img */}
-                        <div className="col-md-5 col-md-push-2">
-                            <div id="product-main-img">
-                                <div className="product-preview">
-                                    <img src={product01} alt=""/>
-                                </div>
-
-                                <div className="product-preview">
-                                    <img src={product03} alt=""/>
-                                </div>
-
-                                <div className="product-preview">
-                                    <img src={product06} alt=""/>
-                                </div>
-
-                                <div className="product-preview">
-                                    <img src={product08} alt=""/>
-                                </div>
+                        <div className="col-md-6 col-md-push-2" style={
+                            {
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-around',
+                                alignItems: "center",
+                                marginBottom: '50px'
+                            }
+                        }>
+                            <img src={images[currentSlide]} alt="Product image"
+                                 style={
+                                {
+                                    maxWidth: '100%',
+                                    width: '480px'
+                                }
+                            }/>
+                            <div style={
+                                {
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    marginTop: '10px',
+                                    border: '1px solid #e4dfec',
+                                    gap: '10px'
+                                }
+                            }>
+                                {images.map((image, index) => (
+                                    <img
+                                        key={index}
+                                        src={image}
+                                        alt={`Product image ${index}`}
+                                        style={{
+                                            height: '60px',
+                                            cursor: 'pointer',
+                                            border: index === currentSlide ? '1px solid #860020' : 'none',
+                                            width: imageWidth * 0.3,
+                                        }}
+                                        onClick={() => handleSlideClick(index)}
+                                    />
+                                ))}
                             </div>
                         </div>
-                        {/* /Product main img */}
-
-                        {/* Product thumb imgs */}
-                        <div className="col-md-2  col-md-pull-5">
-                            <div id="product-imgs">
-                                <div className="product-preview">
-                                    <img src={product01} alt=""/>
-                                </div>
-
-                                <div className="product-preview">
-                                    <img src={product03} alt=""/>
-                                </div>
-
-                                <div className="product-preview">
-                                    <img src={product06} alt=""/>
-                                </div>
-
-                                <div className="product-preview">
-                                    <img src={product08} alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                        {/* /Product thumb imgs */}
-
                         {/* Product details */}
-                        <div className="col-md-5">
+                        <div className="col-md-6">
                             <div className="product-details">
                                 <h2 className="product-name">тут вказується назва продукту</h2>
                                 <div>
@@ -121,10 +147,12 @@ const ProductMainSec1 = () => {
 
                                 <ul className="product-main-btns">
                                     <li><NavLink to="/"><FontAwesomeIcon icon={faHeart}
-                                                                         className="fa fa-heart-o" style={{paddingRight: '5px'}}></FontAwesomeIcon>додати
+                                                                         className="fa fa-heart-o"
+                                                                         style={{paddingRight: '5px'}}></FontAwesomeIcon>додати
                                         до списку бажань</NavLink></li>
                                     <li><NavLink to="/"><FontAwesomeIcon icon={faExchange}
-                                                                         className="fa fa-exchange" style={{paddingRight: '5px'}}></FontAwesomeIcon>додати
+                                                                         className="fa fa-exchange"
+                                                                         style={{paddingRight: '5px'}}></FontAwesomeIcon>додати
                                         для порівняння</NavLink></li>
                                 </ul>
 
@@ -151,16 +179,16 @@ const ProductMainSec1 = () => {
                             <div id="product-tab">
                                 {/* product tab nav */}
                                 <ul className="tab-nav">
-                                    <li className="active"><NavLink data-toggle="tab" to="">Опис</NavLink></li>
-                                    <li><NavLink data-toggle="tab" to="">Подробиці</NavLink></li>
-                                    <li><NavLink data-toggle="tab" to="">Відгуки (3)</NavLink></li>
+                                    <li onClick={() => handleClick(0)} className={activeButton === 0 ? 'active' : ''}><NavLink data-toggle="tab" to="">Опис</NavLink></li>
+                                    <li onClick={() => handleClick(1)} className={activeButton === 1 ? 'active' : ''}><NavLink data-toggle="tab" to="">Подробиці</NavLink></li>
+                                    <li onClick={() => handleClick(2)} className={activeButton === 2 ? 'active' : ''}><NavLink data-toggle="tab" to="">Відгуки (3)</NavLink></li>
                                 </ul>
                                 {/* /product tab nav */}
 
                                 {/* product tab content */}
                                 <div className="tab-content">
                                     {/* tab1  */}
-                                    <div id="tab1" className="tab-pane fade in tab-pane-fade-in-active">
+                                    <div id="tab1" style={{ display: activeButton === 0 ? 'block' : 'none' }}>
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -176,7 +204,7 @@ const ProductMainSec1 = () => {
                                     {/* /tab1  */}
 
                                     {/* tab2  */}
-                                    <div id="tab2" className="tab-pane fade in">
+                                    <div id="tab2" style={{ display: activeButton === 1 ? 'block' : 'none' }}>
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -192,10 +220,10 @@ const ProductMainSec1 = () => {
                                     {/* /tab2  */}
 
                                     {/* tab3  */}
-                                    <div id="tab3" className="tab-pane fade in ">
+                                    <div id="tab3" style={{ display: activeButton === 2 ? 'block' : 'none' }}>
                                         <div className="row">
                                             {/* Rating */}
-                                            <div className="col-md-3">
+                                            <div className="col-lg-3">
                                                 <div id="rating">
                                                     <div className="rating-avg">
                                                         <span>4.5</span>
@@ -289,7 +317,7 @@ const ProductMainSec1 = () => {
                                             {/* /Rating */}
 
                                             {/* Reviews */}
-                                            <div className="col-md-6">
+                                            <div className="col-lg-6">
                                                 <div id="reviews">
                                                     <ul className="reviews">
                                                         <li>
@@ -370,7 +398,7 @@ const ProductMainSec1 = () => {
                                             {/* /Reviews */}
 
                                             {/* Review Form */}
-                                            <div className="col-md-3">
+                                            <div className="col-lg-3">
                                                 <div id="review-form">
                                                     <form className="review-form">
                                                         <input className="input" type="text" placeholder="Your Name"/>
