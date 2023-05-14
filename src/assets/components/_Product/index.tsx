@@ -8,6 +8,7 @@ import { Product } from "../../store/CartStore";
 import { StoreContext } from "../../../context";
 import { useContext } from "react";
 
+
 function ProductComponent({ product }: { product: Product }) {
     const { cart } = useContext(StoreContext);
     return (
@@ -21,7 +22,7 @@ function ProductComponent({ product }: { product: Product }) {
             <div className="product-body">
                 <p className="product-category">{product.category}</p>
                 <h3 className="product-name">
-                    <NavLink to="/product">{product.name}</NavLink>
+                    <NavLink to={`/product?productId=${product.id}`}>{product.name}</NavLink>
                 </h3>
                 <h4 className="product-price">
                     ${(product.price / 100).toFixed(2)}

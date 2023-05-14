@@ -15,7 +15,7 @@ function NewProduct({name}) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        const delay = 5000; // 5 seconds delay
+        const delay = 0; // 5 seconds delay
 
         const timeoutId = setTimeout(() => {
             fetch('https://api.example.com/data')
