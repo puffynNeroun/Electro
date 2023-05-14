@@ -1,12 +1,30 @@
 import SingUp from "../../components/_SingUp/SingUp";
+import {NavLink} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import {myAccountItems} from "./myAccount.data";
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import './myAccount.scss'
+import {useEffect, useState} from "react";
 
 
 
 const MyAccount = () => {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const delay = 5000; // 5 seconds delay
+
+        const timeoutId = setTimeout(() => {
+            fetch('https://api.example.com/data')
+                .then(response => response.json())
+                .then(data => setData(data))
+                .catch(error => console.error(error));
+        }, delay);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <div>
             <Container>
@@ -53,7 +71,7 @@ const MyAccount = () => {
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">{myAccountItem.category}</p>
-                                        <h3 className="product-name"><a style={{fontSize: '12px'}} href="#">{myAccountItem.names}</a></h3>
+                                        <h3 className="product-name"><NavLink to='/product' style={{fontSize: '12px'}}>{myAccountItem.names}</NavLink></h3>
                                         <h4 className="product-price" style={{fontSize: '12px'}}>{myAccountItem.price}<del
                                             className="product-old-price">{myAccountItem.oldprice}</del></h4>
                                     </div>

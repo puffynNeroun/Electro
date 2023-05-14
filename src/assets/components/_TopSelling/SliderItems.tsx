@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import {useState, useEffect} from "react";
 import { Container } from "react-bootstrap";
 
 import "../../../assets/styles/index.css";
@@ -7,7 +8,25 @@ import {sliderItems} from "./_Slider/simpleSlider.data";
 import { NavLink } from "react-router-dom";
 import Product from "../_Product";
 
+
+
 function NewProduct({name}) {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const delay = 5000; // 5 seconds delay
+
+        const timeoutId = setTimeout(() => {
+            fetch('https://api.example.com/data')
+                .then(response => response.json())
+                .then(data => setData(data))
+                .catch(error => console.error(error));
+        }, delay);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
@@ -16,6 +35,9 @@ function NewProduct({name}) {
         slidesToScroll: 1,
         autoplay: true,
     };
+
+
+
 
     return (
         <div style={{ marginTop: "40px" }}>

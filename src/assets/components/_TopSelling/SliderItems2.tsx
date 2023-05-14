@@ -6,6 +6,7 @@ import "./_Slider/simpleSlider.scss";
 import { topSellingItems } from "./_Slider/simpleSlider.data";
 import { NavLink } from "react-router-dom";
 import Product from "../_Product";
+import {useEffect, useState} from "react";
 
 function NewProduct({name}) {
     const settings = {
@@ -16,6 +17,21 @@ function NewProduct({name}) {
         slidesToScroll: 1,
         autoplay: true,
     };
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const delay = 5000; // 5 seconds delay
+
+        const timeoutId = setTimeout(() => {
+            fetch('https://api.example.com/data')
+                .then(response => response.json())
+                .then(data => setData(data))
+                .catch(error => console.error(error));
+        }, delay);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
 
     return (
         <div style={{ marginTop: "40px" }}>

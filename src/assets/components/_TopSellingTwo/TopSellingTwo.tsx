@@ -18,6 +18,22 @@ const Test = () => {
         }, 3100);
         return () => clearInterval(interval);
     }, []);
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const delay = 5000; // 5 seconds delay
+
+        const timeoutId = setTimeout(() => {
+            fetch('https://api.example.com/data')
+                .then(response => response.json())
+                .then(data => setData(data))
+                .catch(error => console.error(error));
+        }, delay);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <Row>
             <Col>

@@ -10,8 +10,25 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import '../../styles/index.css'
 import './store.scss'
 import "../../../assets/styles/index.css";
+import {useEffect, useState} from "react";
 
 const Store = () => {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const delay = 5000; // 5 seconds delay
+
+        const timeoutId = setTimeout(() => {
+            fetch('https://api.example.com/data')
+                .then(response => response.json())
+                .then(data => setData(data))
+                .catch(error => console.error(error));
+        }, delay);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <div>
             {/*BREADCRUMB*/}

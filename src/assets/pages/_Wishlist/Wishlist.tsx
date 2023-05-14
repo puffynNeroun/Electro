@@ -3,8 +3,26 @@ import SingUp from "../../components/_SingUp/SingUp";
 import {wishlistItems} from "./wishlist.data";
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import './wishlist.scss'
+import {NavLink} from "react-router-dom";
+import {useEffect, useState} from "react";
 
 const Wishlist = () => {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const delay = 5000; // 5 seconds delay
+
+        const timeoutId = setTimeout(() => {
+            fetch('https://api.example.com/data')
+                .then(response => response.json())
+                .then(data => setData(data))
+                .catch(error => console.error(error));
+        }, delay);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <div>
             <Container>
@@ -20,7 +38,7 @@ const Wishlist = () => {
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">{wishlistItem.category}</p>
-                                        <h3 className="product-name"><a style={{fontSize: '12px'}} href="#">{wishlistItem.names}</a></h3>
+                                        <h3 className="product-name"><NavLink to='/product' style={{fontSize: '12px'}}>{wishlistItem.names}</NavLink></h3>
                                         <h4 className="product-price" style={{fontSize: '12px'}}>{wishlistItem.price}<del
                                             className="product-old-price">{wishlistItem.oldprice}</del></h4>
                                     </div>
