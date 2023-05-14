@@ -15,7 +15,7 @@ const Product = () => {
             {/* /BREADCRUMB */}
 
             {/* SECTION */}
-            <ProductMainSec1/>
+            <ProductMainSec1 screenWidth={250}/>
             {/* /SECTION */}
 
             {/* Section */}
