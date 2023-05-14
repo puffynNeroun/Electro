@@ -9,14 +9,6 @@ import Product from "../_Product";
 import {useEffect, useState} from "react";
 
 function NewProduct({name}) {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-    };
 
     const [data, setData] = useState([]);
 
@@ -33,6 +25,14 @@ function NewProduct({name}) {
         return () => clearTimeout(timeoutId);
     }, []);
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+    };
     return (
         <div style={{ marginTop: "40px" }}>
             <Container>

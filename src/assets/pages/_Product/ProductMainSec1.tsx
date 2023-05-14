@@ -128,7 +128,7 @@ const ProductMainSec1 = ({screenWidth}: { screenWidth: number   }) => {
 
                                 <div className="add-to-cart add-to-cart__product">
                                     <div className="qty-label">
-                                        Rількість
+                                        Кількість
                                         <div className="input-number">
                                             <input type="number"/>
                                             <span className="qty-up">+</span>
